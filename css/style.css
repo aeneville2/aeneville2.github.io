@@ -1,0 +1,130 @@
+body {
+	background-color:#afc7cd;
+}
+
+#wrapper{
+	font-family:"Lucida Bright",fantasy;
+	font-size: 12pt;
+	color: #473904;
+	padding-left:5px;
+}
+
+#title{
+	font-family:"Lucida Handwriting";
+	background-color:#d1f1e3;
+	text-align:center;
+	padding:5px;
+	border-bottom:1pt solid #473904;
+}
+
+#navigation{
+	padding-top:0px;
+}
+
+.container-fluid {
+	margin: 100px;
+}
+
+#nav_container{
+	background-color: #d1f1e3;
+}
+
+.navbar-nav {
+	background-color: #d1f1e3;
+	font-family:"Lucida Handwriting";
+	text-align:center;
+}
+
+.nav-item{
+	padding-right:20px;
+	padding-left:20px;
+}
+
+.row {
+	margin:50px;
+}
+
+#section{
+	font-family:"Lucida Handwriting";
+	margin-top:25px;
+	margin-bottom:25px;
+	margin-left:0px;
+	font-weight:bold;
+}
+
+h4 span {
+	background-color:rgba(175,199,205,0.7);
+	padding:10px;
+}
+
+h5 span{
+	background-color:rgba(209,241,227,0.7);
+	text-align: center;
+	padding:5px;
+}
+
+h6 {
+	font-weight:bold;
+}
+
+#highlighted_work .col-xs-10{
+	margin-top:25px;
+}
+
+.card {
+	background-color:#d1f1e3;
+}
+
+.card-header {
+	font-weight:bold;
+	text-align:center;
+}
+
+.card-img-top{
+	height:600px;
+	object-fit:scale-down;
+}
+
+.card-body {
+	height:200px;
+}
+
+#professional_work .card-body{
+	height:350px;
+}
+
+#mypic{
+	height:200px;
+	object-fit:cover;
+}
+
+#short_resume{
+	padding:10px;
+	background-color:rgba(255,255,255,0.7)
+}
+
+#contact_items p {
+	text-align:center;
+	padding-top:15px;
+}
+
+#quotes {
+	/*background-color:rgba(175,199,205,0.7);*/
+	font-family:"Lucida Handwriting";
+	text-align:center
+}
+
+#quotes h5{
+	background-color:rgba(175,199,205,0.7);
+}
+
+footer p{
+	text-align:center;
+	font-size:10pt;
+	/*color:#8d928f;*/
+	padding:0;
+	margin:0;
+	background-color:#d1f1e3
+}
+
+
