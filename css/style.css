@@ -88,12 +88,12 @@ footer p{
 }
 
 .card-img-top{
-	height:400px;
+	height:350px;
 	object-fit:scale-down;
 }
 
 .card-body {
-	height:250px;
+	height:300px;
 }
 
 #mypic{
