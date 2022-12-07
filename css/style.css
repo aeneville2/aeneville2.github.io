@@ -88,16 +88,12 @@ footer p{
 }
 
 .card-img-top{
-	height:600px;
+	height:400px;
 	object-fit:scale-down;
 }
 
 .card-body {
-	height:300px;
-}
-
-#professional_work .card-body{
-	height:300px;
+	height:350px;
 }
 
 #mypic{

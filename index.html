@@ -76,11 +76,12 @@
 			<div class="row justify-content-center">
 				<div class="col-md-3 col-xs-10" id="database">
 					<div class="card">
-						<div class="card-header"><h6>Database Design</h6></div>
+						<div class="card-header"><h6>Database Design & Implementation</h6></div>
 						<a href="assets/National Parks ER Diagram with Symbols.png"><img class="card-img-top" src="assets/National Parks ER Diagram with Symbols.png" alt="National Parks ER Diagram"></a>
-						<div class="card-body"><p>As part of the Spatial Databases course at UW-Madison, we learned about database design and implementation.
-							As such, the final project involved designing a database in order to solve a problem and testing the implementation
-							of that database. The link to the final report with the database design and implementation can be found 
+						<div class="card-body"><p>As part of the Spatial Databases course at UW-Madison, we learned about database design and implementation generally
+							and for spatial applications. Some of the main topics covered included PostgreSQL databases and ER diagrams.
+							The final project of the course involved designing and implementing a database in order to solve a problem. 
+							The link to my group's final report with our database design and implementation can be found 
 							<a href="assets/GEOG 574 Final Report.pdf">here.</a>
 						</p></div>
 					</div>
@@ -90,20 +91,20 @@
 						<div class="card-header"><h6>Time & Leaflet</h6></div>
 						<a href="assets/Leaflet Lab.png"><img class="card-img-top" src="assets/Leaflet Lab.png" alt="National Park Visitation Map"></a>
 						<div class="card-body"><p>As part of the Interactive Cartography and Visualization course at UW-Madison, 
-							we practiced interaction in the fourth dimension: time.
-							By leveraging the Leaflet JS library, I created an interactive map showing national park visitation numbers over the years. 
-							
+							we practiced implementing interaction in multiple dimensions, including time.
+							By leveraging the Leaflet JavaScript library, I created an interactive map showing national park visitation numbers
+							that cycled through the years based on user interaction with an operator. 
 						</p></div>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-10" id="d3-lab">
 					<div class="card">
-						<div class="card-header"><h6>Coordinated Visualization</h6></div>
+						<div class="card-header"><h6>Coordinated Visualization & D3</h6></div>
 						<a href="assets/D3 Lab with Coordinated Visualization.png"><img class="card-img-top" src="assets/D3 Lab with Coordinated Visualization.png" alt="Coordinated Visualization Map"></a>
 						<div class="card-body"><p>As part of the Interactive Cartography and Visualization course at UW-Madison, 
-							I created this mapping application using the D3 JS library that implemented the idea of coordinated visualization. 
-							Interaction with the chart updated the map to reflect the 
-							interaction (e.g. selecting a point in the chart highlighted the associated county in the map) and vice versa.
+							I created this mapping application using the D3 JavaScript library that implemented the idea of coordinated visualization: 
+							interaction with the chart updated the map to reflect the interaction (e.g. selecting a point in the chart 
+							highlighted the associated county in the map as seen in red in the image above) and vice versa.
 						</p></div>
 					</div>
 				</div>
@@ -118,8 +119,9 @@
 						<div class="card-header"><h6>Recreation Map</h6></div>
 						<a href="assets/UtahLakeMap.jpg"><img class="card-img-top" src="assets/UtahLakeMap.jpg" alt="Utah Lake Map"></a>
 						<div class="card-body"><p>I created the above map using ArcGIS Pro for another department to be a 
-						basic reference map showing places of interest for Utah Lake. I often have the opportunity to work with other departments at Central Utah Water Conservancy District
-						to create a wide range of maps. Doing so has given me a great opportunity to coordinate with others to create maps that fit their needs.</p></div>
+						basic reference map showing places of interest for Utah Lake. I often have the opportunity to work with other departments at 
+						Central Utah Water Conservancy District (CUWCD) to create a wide range of maps. 
+						Doing so has given me a great opportunity to coordinate with others to create maps that fit their needs.</p></div>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-10" id="water supply">
@@ -127,7 +129,7 @@
 						<div class="card-header"><h6>Story Map</h6></div>
 						<a href="https://storymaps.arcgis.com/stories/82230632996c470eb43834c7ffa29b77"><img class="card-img-top" src="assets/WaterSupplyUpdate.png" alt="Water Supply Update Story Map"></a>
 						<div class="card-body">
-							<p>One of the main things I have done while employed with Central Utah Water Conservancy District has been pioneering converting 
+							<p>One of the main things I have done while employed with CUWCD has been pioneering converting 
 							the Water Supply Update presentations given at board meetings from PowerPoints to ArcGIS Story Maps.  
 							I am grateful for the opportunity I have had to pioneer this effort and set the stage for future presentations. To see additional story maps,
 							visit <a href="https://www.cuwcd.com/waterdata.html#gsc.tab=0">this link</a> and view any of the Water Supply Updates.</p>
@@ -148,7 +150,7 @@
 					<div class="card">
 						<div class="card-header"><h6>Tolkien-Themed District Map</h6></div>
 						<a href="assets/Lord_of_the_Rings_District_Map.jpg"><img class="card-img-top" src="assets/Lord_of_the_Rings_District_Map.jpg" alt="Tolkien-Themed District Map"></a>
-						<div class="card-body"><p>At the Central Utah Water Conservancy District, we recently updated the District maps. 
+						<div class="card-body"><p>At CUWCD, we recently updated the District maps. 
 						One of the more interesting ones I got to be involved with was applying a fun Tolkien-style theme to the basic map for the break room.
 						I had to apply various cartographic principles to ensure it matched the theme, while still conveying the intended information.</p></div>
 					</div>
@@ -159,11 +161,10 @@
 					<div class="card">
 						<div class="card-header"><h6>Automating Workflows with Python</h6></div>
 						<a href="assets/VTPK Update Script.jpg"><img class="card-img-top" src="assets/VTPK Update Script.jpg" alt="VTPK Update Python Script"></a>
-						<div class="card-body"><p>One of the most tedious workflows we had at the District was the process of updating the vector tile 
+						<div class="card-body"><p>One of the most tedious workflows we had at CUWCD was the process of updating the vector tile 
 							packs on a monthly basis. Using existing python scripts and the knowledge I had learned of python, I was able to generate 
-							a script that completely automated the process and only required entering in a few parameters in the command line to run.
-							This made the a process that used to take one member of the GIS team 1-2 days of manual effort now only take 5 seconds of manual
-							effort and 30 minutes of the process running in the background to complete.
+							a script that completely automated the process and only required entering in a few parameters in the command line to run,
+							rather than the 1-2 days of manual effort it used to take to complete that process.
 						</p></div>
 					</div>
 				</div>	
@@ -213,7 +214,7 @@
 					<li>GIS Intern, Central Utah Water Conservancy District, March 2019 - July 2020</li></ul></p>
 					<h6 id="skills">Skills</h6>
 					<p><ul><li>Esri Products: Pro, Online, Enterprise, StoryMaps, Dashboards, JavaScript and Python APIs</li>
-					<li>Development: Python, Arcade (ArcGIS), HTML, CSS, JavaScript, various JavaScript libraries (e.g., Leaflet, D3), Bootstrap, AJAX, Java, SQL, PostgreSQL databases</li>
+					<li>Development: Python, Arcade (ArcGIS), HTML, CSS, JavaScript, various JavaScript libraries (e.g., Leaflet, D3, Google Maps), Bootstrap, AJAX, Java, SQL, PostgreSQL databases</li>
 					<li>Adobe: Illustrator and Photoshop</li>
 					<li>Microsoft Office: PowerPoint, Excel, Word</li></ul></p>
 					<h6><a href="assets/Resume_AspenNeville-3.pdf">Link to Full Resume</a></h6>
