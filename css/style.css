@@ -13,11 +13,16 @@ header{
 	position:sticky;
 	top:0;
 	z-index:100;
+	background-color:white;
+}
+
+button{
+	background-color:white;
 }
 
 #top-btn img{
-	height:15px;
-	width:10px;
+	height:20px;
+	width:15px;
 	object-fit:fill;
 }
 
