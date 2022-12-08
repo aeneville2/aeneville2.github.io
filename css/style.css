@@ -8,6 +8,19 @@ header{
 	text-align:center;
 }
 
+#top-btn {
+	float:right;
+	position:sticky;
+	top:0;
+	z-index:100;
+}
+
+#top-btn img{
+	height:15px;
+	width:10px;
+	object-fit:fill;
+}
+
 h4 span {
 	background-color:rgba(175,199,205,0.7);
 	padding:10px;
@@ -119,5 +132,4 @@ footer p{
 #quotes h5{
 	background-color:rgba(175,199,205,0.7);
 }
-
 
