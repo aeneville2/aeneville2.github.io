@@ -2,10 +2,33 @@ body {
 	background-color:#afc7cd;
 }
 
-header{
+header, nav {
 	background-color:#d1f1e3;
 	font-family:"Lucida Handwriting";
 	text-align:center;
+	padding:5px;
+	justify-content:center;
+}
+
+.navbar-toggler {
+	border:solid 1px;
+	border-color:#afc7cd;
+}
+
+.nav-link {
+	text-decoration: underline;
+}
+
+.carousel-item {
+	text-align:center;
+}
+
+.carousel-item img {
+	max-height:500px;
+	max-width:800px;
+	height:auto;
+	width:auto;
+	display:inline-block !important;
 }
 
 #top-btn {
@@ -74,7 +97,7 @@ footer p{
 	margin:50px;
 }
 
-#title{
+/*#title{
 	padding:5px;
 	border-bottom:1pt solid #473904;
 }
@@ -91,7 +114,7 @@ footer p{
 .nav-item{
 	padding-right:20px;
 	padding-left:20px;
-}
+}*/
 
 #section{
 	font-family:"Lucida Handwriting";

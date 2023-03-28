@@ -5,17 +5,45 @@
 	<title>Aspen Neville | Home</title>
 	<meta name="keywords" content="cartography, GIS, Aspen Neville"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
 </head>
 <body style="background-image:url(assets/Topo_Map.png);background-repeat:repeat;background-position:0 0;background-size:100% auto">
 	<div id="wrapper">
-		<header>
+		<nav class="navbar sticky-top navbar-expand-md bg-body-tertiary">
+			<div class="container-fluid" style="margin:10px;">
+				<a class="navbar-brand" href="#" style="font-size:24px;color:#473904;">GIS Development & Cartography | Aspen Neville</a>
+			
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" style="color:#473904;">
+					Menu<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-md-0">
+						<!--<li class="nav-item"><a class="nav-link" href="#">Home</a></li>-->
+						<li class="nav-item"><a class="nav-link" href="#about_me" style="color:#473904;">About Me</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#473904;">
+								Highlighted Work
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#academic_work" style="color:#473904;">Academic Work</a></li>
+								<li><a class="dropdown-item" href="#professional_work" style="color:#473904;">Professional Work</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#experience" style="color:#473904;">Experience</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact" style="color:#473904;">Contact</a></li>
+					</ul>
+				</div>	
+			</div>
+		</nav>
+		<!--<header style="text-align:center;justify-content:center;">
 			<div id="title">
 				<h1 id="name">Aspen Neville</h1>
 				<h2 id="subtitle">GIS: Cartography & Development</h2>
 			</div>
 			<div class="container-fluid" id="nav_container">
-				<div class="row" style="padding:0;margin:0">
+				<div class="row" style="padding:0;margin-left:24%;text-align:center;">
 					<nav class="navbar navbar-expand-md mx-auto" id="navigation">
 						<ul class="navbar-nav">
 							<li class="nav-item"><a class="nav-link" href="#highlighted_work">Highlighted Work</a></li>
@@ -26,10 +54,77 @@
 					</nav>
 				</div>
 			</div>
-		</header>
+		</header>-->
 		<div class="container-fluid" id="body-wrapper">
-			<div class="row" id="top-btn">
+			<div id="carouselWork" class="carousel carousel-dark slide" data-bs-ride="carousel" style="height:500px;justify-content: center;">
+				<div class="carousel-indicators">
+				  	<button type="button" data-bs-target="#carouselWork" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  	<button type="button" data-bs-target="#carouselWork" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  	<button type="button" data-bs-target="#carouselWork" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				  	<div class="carousel-item active">
+						<img src="assets/Tanzania.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+					  		<h5>Tanzania Reference Map</h5>
+					  		<p>Some representative placeholder content for the first slide.</p>
+						</div>
+				  	</div>
+				  	<div class="carousel-item">
+						<img src="assets/UtahLakeMap.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+					  		<h5>Utah Lake Map</h5>
+					  		<p>Some representative placeholder content for the second slide.</p>
+						</div>
+				  	</div>
+					<div class="carousel-item">
+						<img src="assets/Soda_Shops.png" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Utah Soda Shops Interactive Map</h5>
+							<p>Some representative placeholder content for the third slide.</p>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselWork" data-bs-slide="prev">
+				  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  	<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselWork" data-bs-slide="next">
+				  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  	<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!--<div class="row" id="top-btn">
 				<a href="#title"><button><img src="assets/up-arrow.jpg"></button></a>
+			</div>-->
+			<div class="container-fluid" id="about_me">
+				<div class="row">
+					<div class="col-md-12 col-xs-12" style="padding:5px"><h4 id="section"><span>About Me</span></h4></div>
+					<div class="col-md-2 col-xs-10">
+						<img class="mx-auto d-block" id="mypic" src="assets/Aspen_Photo_15Apr22.jpg" alt="Aspen Neville picture">
+					</div>
+					<div class="col-md-10 col-xs-12">
+						<div id="bio" style="background-color:rgba(255,255,255,0.7);padding:10px">
+							<p>Born and raised in the mountains of Colorado, I came to appreciate the beauty found in the mountains that surrounded me
+							and developed a sense of adventure and curiosity from a young age. That curiosity grew as I traveled to many places with my parents. These experiences instilled in me
+							me a fresh perspective of what surrounded me and a desire to learn about the new places, peoples, cultures, and landscapes I encountered. While deciding on a major
+							for my undergraduate degree, I attended a study abroad to Tanzania with the Geography Department. That experience enriched my perspective and increased my desire
+							to learn even more. Upon returning home, I declared Geography as a major and have never looked back since. I had a goal to find something 
+							that I enjoyed doing to pursue for a career. With GIS, I achieved that goal. I love what I do from getting to create and design
+							maps on many different topics to visualizing and solving problems from a spatial perspective. I feel that I continue to learn something
+							new every day.</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<div id="focus_statement" style="background-color:rgba(255,255,255,0.7);padding:10px">
+							<p> My focus in my work is to help others see the world from a new perspective, inspire others to learn more about the world around them, and tell the stories that surround us.
+							I do this by creating maps, dashboards, applications, and presentations using tools such as ArcGIS Pro, Adobe Illustrator, ArcGIS API for JavaScript, and StoryMaps for ArcGIS.
+							Additionally, I strive to keep learning and expanding my skills to help accomplish my goal. As such, I am currently pursuing 
+							a master's degree in GIS Development to develop and enhance my coding and development skills. 
+							Discovering GIS has been a blessing I never knew I needed, and with it, I have found my true passion in life.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="container-fluid" id="highlighted_work">
 				<div class="row justify-content-center" id="academic_work">
@@ -211,35 +306,7 @@
 					
 				</div>
 			</div>
-			<div class="container-fluid" id="about_me">
-				<div class="row">
-					<div class="col-md-12 col-xs-12" style="padding:5px"><h4 id="section"><span>About Me</span></h4></div>
-					<div class="col-md-2 col-xs-10">
-						<img class="mx-auto d-block" id="mypic" src="assets/Aspen_Photo_15Apr22.jpg" alt="Aspen Neville picture">
-					</div>
-					<div class="col-md-10 col-xs-12">
-						<div id="bio" style="background-color:rgba(255,255,255,0.7);padding:10px">
-							<p>Born and raised in the mountains of Colorado, I came to appreciate the beauty found in the mountains that surrounded me
-							and developed a sense of adventure and curiosity from a young age. That curiosity grew as I traveled to many places with my parents. These experiences instilled in me
-							me a fresh perspective of what surrounded me and a desire to learn about the new places, peoples, cultures, and landscapes I encountered. While deciding on a major
-							for my undergraduate degree, I attended a study abroad to Tanzania with the Geography Department. That experience enriched my perspective and increased my desire
-							to learn even more. Upon returning home, I declared Geography as a major and have never looked back since. I had a goal to find something 
-							that I enjoyed doing to pursue for a career. With GIS, I achieved that goal. I love what I do from getting to create and design
-							maps on many different topics to visualizing and solving problems from a spatial perspective. I feel that I continue to learn something
-							new every day.</p>
-						</div>
-					</div>
-					<div class="col-12">
-						<div id="focus_statement" style="background-color:rgba(255,255,255,0.7);padding:10px">
-							<p> My focus in my work is to help others see the world from a new perspective, inspire others to learn more about the world around them, and tell the stories that surround us.
-							I do this by creating maps, dashboards, applications, and presentations using tools such as ArcGIS Pro, Adobe Illustrator, ArcGIS API for JavaScript, and StoryMaps for ArcGIS.
-							Additionally, I strive to keep learning and expanding my skills to help accomplish my goal. As such, I am currently pursuing 
-							a master's degree in GIS Development to develop and enhance my coding and development skills. 
-							Discovering GIS has been a blessing I never knew I needed, and with it, I have found my true passion in life.</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 			<div class="container-fluid" id="experience">
 				<div class="row">
 					<div class="col-12"><h4 id="section"><span>Experience</span></h4></div>
@@ -290,5 +357,6 @@
 			<p>Background Image: U.S. Geological Survey. Vail, Colorado 1980 [map]. 1:100,000. 30 x 60 Minute Series. Reston, V.A.: USGS, 1982.</p>
 		</footer>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
