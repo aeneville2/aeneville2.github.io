@@ -21,14 +21,19 @@ header, nav {
 
 .carousel-item {
 	text-align:center;
+	justify-content:center;
+	position:relative;
+	height:100%;
 }
 
 .carousel-item img {
-	max-height:500px;
-	max-width:800px;
+	/*max-height:500px;
+	max-width:800px;*/
+	max-height:90vh;
 	height:auto;
 	width:auto;
 	display:inline-block !important;
+	object-fit: contain;
 }
 
 #top-btn {
