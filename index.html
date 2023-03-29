@@ -195,11 +195,17 @@
 						<div class="card">
 							<div class="card-header"><h6>Soda Shops in Utah</h6></div>
 							<a href="assets/Soda_Shops.png" target="_blank"><img class="card-img-top" src="assets/Soda_Shops.png" alt="Soda Shops Application"></a>
-							<div class="card-body"><p>I created <a href="https://aeneville2.github.io/Soda_Shop" target="_blank">this interactive web application</a> 
-								as part of a project for the Interactive Cartography and Visualization course at UW-Madison.
-							It incoporated Leaflet and Data-Driven Documents (D3) JavaScript libraries. 
-							The map was interactive and both the map and pie chart updated to reflect client-side filtering of the data. 
-							The application was one of my first front-end interactive web applications using JavaScript.</p></div>
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>Leaflet, D3, JavaScript, jQuery, GitHub</p>
+								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
+								<p><strong>Project Background: </strong>The purpose of the Soda Shops in Utah interactive web application 
+								is to allow users to discover and learn more about the soda shop phenomenon in Utah. The map contains point 
+								symbols at each soda shop location, color-coded by shop. Additionally, 
+								there are filters for the map based on menu items, allowing users to compare what the soda shops sell. A pie chart displays the 
+								proportion of stores statewide helping to display which soda shop is most popular. 
+								Users can select different counties and the map and pie chart update accordingly for comparison on the county-level.</p>
+								<a href="https://aeneville2.github.io/Soda_Shop" class="btn btn-primary" target="_blank">See the application</a>
+							</div>
 						</div>
 					</div>
 					
@@ -209,39 +215,53 @@
 						<div class="card">
 							<div class="card-header"><h6>Grand Teton Lodge Company Guests</h6></div>
 							<a href="assets/GrandTetonLodgeCo_Application.png" target="_blank"><img class="card-img-top" src="assets/GrandTetonLodgeCo_Application.png" alt="Grand Teton Lodge Company Web Application"></a>
-							<div class="card-body"><p>I designed the above web application while taking the Spatial Web & Mobile Programming course at UW-Madison. 
-							The application, designed for the Grand Teton Lodge Company managers and marketing teams, connected to a PostgreSQL database containing
-							 all of the guests data and allowed for writing new records into the database,
-							querying the database, and updating records in the database all from the front-end application. The map and pie charts updated to reflect
-							changes made to the database. The application was built primarily using JavaScript for the front-end and Java for the back-end,
-							with the use HTTP GET & POST requests and responses and a Java JSP for communication between.
-							The application was my first that contained both a front-end & back-end and the interactions in between.</p></div>
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>Google Maps, D3, JavaScript, Java JSP, PostgreSQL Database, Tomcat Application Server</p>
+								<p><strong>Course: </strong>GEOG 576 - Geospatial Web and Mobile Programming (UW-Madison)</p>
+								<p><strong>Project Background: </strong>The goal of the project was to create a web application to solve a problem that involved
+								client-server communication. It was my first project involving both client-side and server-side development.
+								I designed it for managers and the marketing teams of the Grand Teton Lodge Company to understand if there were patterns 
+								between where a guest originates from and their preferences while staying in the park. The guests data was stored in a table 
+								in a PostgreSQL database. 
+								From the client, the database could be queried by the user to only display guests with certain stay preferences (such as month of stay),
+								the user could add new guests into the database, and the user could update the data for existing guests in the database. 
+								A Java JSP utilized HTTP GET & POST requests for communication with the client and used a driver and SQL queries to communicate with the database:
+								to retrieve all guest points for display in the map on initial loading, inserting a new guest into the database, updating guests in 
+								the database, and performing queries on the database to only show certain guest points in the map.
+								The pie charts updated according to the guests displayed in the map.</p>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="database">
 						<div class="card">
 							<div class="card-header"><h6>National Parks Geodatabase</h6></div>
 							<a href="assets/National Parks ER Diagram with Symbols.png" target="_blank"><img class="card-img-top" src="assets/National Parks ER Diagram with Symbols.png" alt="National Parks ER Diagram"></a>
-							<div class="card-body"><p>The final project of the Spatial Databases course at UW-Madison, 
-								involved designing and implementing a database in order to solve a problem. 
-								My group focused on designing a geodatabase to compare which national parks received the most visitation
-								and whether the nearby transportation networks or nearby population areas had any correlation with visitation.
-								The goal was to enhance understanding of the factors that influence national park visitation and aim to mitigate 
-								the impacts on national parks that result from increased visitation.
-								The link to my group's final report which illustrates the database design can be found 
-								<a href="assets/GEOG 574 Final Report.pdf" target="_blank">here.</a>
-							</p></div>
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>Geodatabase, ArcGIS Pro, ER & Relational Diagrams</p>
+								<p><strong>Course: </strong>GEOG 574 - Geospatial Database Design and Development (UW-Madison)</p>
+								<p><strong>Project Background: </strong>The goal of this project was to design and implement a spatial database
+									that could be manipulated to help explore and solve a problem. It was my first time designing and implementing a database.
+									My group chose to design a geodatabase in ArcGIS Pro to compare which national parks received the most visitation 
+									and whether the nearby transportation networks or nearby population areas have any correlation with visitation. 
+									We used ER and Relational Diagrams to define the relationships and attributes between the different 
+									entities in the geodatabase during the design process.
+								</p>
+								<a href="assets/GEOG 574 Final Report.pdf" class="btn btn-primary" target="_blank">Read the report</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="leaflet-lab">
 						<div class="card">
 							<div class="card-header"><h6>National Parks Annual Visitation</h6></div>
 							<a href="assets/Leaflet Lab.png" target="_blank"><img class="card-img-top" src="assets/Leaflet Lab.png" alt="National Park Visitation Map"></a>
-							<div class="card-body"><p>As part of the Interactive Cartography and Visualization course at UW-Madison, 
-								we practiced implementing interaction in multiple dimensions, including time.
-								By leveraging the Leaflet JavaScript library, I created an interactive map showing national park visitation numbers
-								that cycled through the years based on user interaction with an operator. This was my first application built with JavaScript.
-							</p></div>
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>Leaflet, jQuery, JavaScript</p>
+								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
+								<p><strong>Project Background: </strong>As my first project utilizing JavaScript, the goal was to design an interactive 
+								thematic map utilizing proportional symbols and including interaction operators. My project focused on comparing annual
+								visitation at national parks from 2011 to 2020 with point symbols sized according to annual visitation at each park.
+								The application included the operators of zoom, pan, retrieve (popups for each point),
+								sequence (move through the years), and overlay (turning on an average visitation layer).</p></div>
 						</div>
 					</div>
 				</div>
@@ -250,10 +270,15 @@
 						<div class="card">
 							<div class="card-header"><h6>Estimated Water Use in the United States by County</h6></div>
 							<a href="assets/D3 Lab with Coordinated Visualization.png" target="_blank"><img class="card-img-top" src="assets/D3 Lab with Coordinated Visualization.png" alt="Coordinated Visualization Map"></a>
-							<div class="card-body"><p>As part of the Interactive Cartography and Visualization course at UW-Madison, 
-								I created a mapping application using the D3 JavaScript library that implemented the idea of coordinated visualization: 
-								interaction with the chart updated the map to reflect the interaction (e.g. selecting a point in the chart 
-								highlighted the associated county in the map in red as seen in the image above) and vice versa.
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>D3, JavaScript, GitHub</p>
+								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
+								<p><strong>Project Background: </strong>The goal of this project was to create an interactive web page with a choropleth map and chart
+									to generate meaningful insights regarding patterns in the data set. As such, the interactive operators of retrieve (with
+									highlighting and coordinated visualization between the map and chart) and reexpress (to change the variables displayed 
+									in the choropleth map) were used. My project focused on looking at different types of water use in the United States by counties
+									(user could change which water use type was being displayed).
+									Selecting a point in the scatter plot also highlighted the associated county in the map and vice versa. 
 							</p></div>
 						</div>
 					</div>
@@ -261,26 +286,44 @@
 						<div class="card">
 							<div class="card-header"><h6>Exploring the Spatial Relationship Between Cancer and Nitrate</h6></div>
 							<a href="assets/GEOG 777 Project 1 Results Application Screen.png" target="_blank"><img class="card-img-top" src="assets/GEOG 777 Project 1 Results Application Screen.png" alt="Spatial Analysis Application"></a>
-							<div class="card-body"><p>As part of the Capstone in GIS Development course at UW-Madison, we were given a task to design an application
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>Python, Arcpy, Tkinter</p>
+								<p><strong>Course: </strong>GEOG 777 - Capstone in GIS Development (UW-Madison)</p>
+								<p><strong>Project Background: </strong>
+									As part of the Capstone in GIS Development course at UW-Madison, we were given a task to design an application
 								that would perform spatial analysis methods based on user input to examine the relationship between cancer rates and nitrate levels
 								in the state of Wisconsin. Building the application required that I utilize what I had learned regarding python from the Introduction
-								to Geocomputing course and spatial analysis from the GIS and Spatial Analysis courses at UW-Madison. 
-								For the application, I leveraged the library of Arcpy for the spatial analysis and the library of Tkinter for the GUI.
-								Click <a href="assets/GEOG 777 Project 1 Report.pdf" target="_blank">here</a> to read the report describing the application and spatial analysis methods used.
-							</p></div>
+								to Geocomputing (GEOG 378) course and spatial analysis from the GIS and Spatial Analysis (GEOG 579) course at UW-Madison. 
+								For the application, I leveraged the library of Arcpy for the spatial analysis and the library of Tkinter for the GUI. 
+								The spatial analysis methods of IDW, Zonal Statistics, Joining, and Generalized Linear Regression were used. In the 
+								GUI, the user could input different values for the distance decay coefficient used in the IDW step of the analysis. Then, 
+								the analysis would be performed and a resulting standard deviation map, linear regression equation, and statistical values would
+								be output to the GUI for the user to see and save the results.
+								</p>
+								<a href="assets/GEOG 777 Project 1 Report.pdf" class="btn btn-primary" target="_blank">Read the report</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="gtnp-mobile-friendly-app">
 						<div class="card">
 							<div class="card-header"><h6>Exploring Grand Teton National Park (GTNP)</h6></div>
 							<a href="assets/GEOG 777 Project 2 Main Screen v2.png" target="_blank"><img class="card-img-top" src="assets/GEOG 777 Project 2 Main Screen v2.png" alt="Exploring GTNP"></a>
-							<div class="card-body"><p>As part of the Capstone in GIS Development course, we were given a task to design a mobile-friendly application
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>Mapbox, Bootstrap, D3</p>
+								<p><strong>Course: </strong>GEOG 777 - Capstone in GIS Development (UW-Madison)</p>
+								<p><strong>Project Background: </strong>
+								As part of the Capstone in GIS Development course, we were given a task to design a mobile-friendly application
 								for a park that was cohesive and centered around themes. I designed the application for first-time visitors to Grand Teton National Park
-								and focused on the themes of exploring, learning, safety, and enjoyment. The application also allowed users to contribute to one of the 
-								data layers which used API calls for inserting the new data (PUT) and retrieving the updated data (GET). I primarily used Bootstrap
-								 to make the application cohesive & responsive and Mapbox for the map & application functionality, as well as the storage of the data.
-								Click <a href="https://aeneville2.github.io/GEOG777ExploringGTNP/#" target="_blank">here</a> to view the application. 
-							</p></div>
+								and focused on the themes of exploring, learning, safety, and enjoyment. In the application, the user could select different points of 
+								interest to find out more information, search for points, get directions to points, and filter the points displayed in the map. 
+								The application also allowed users to contribute to one of the data layers by ranking their favorite point of interest
+								which used API calls for inserting the new data (PUT) and retrieving the updated data (GET) from the data layers stored in MapBox.
+								The new point was then added to the map and updated in a chart also available. I had to consider aspects of design to make the application
+								work well on mobile devices. 
+								I primarily used Bootstrap to make the application cohesive & responsive and Mapbox for the map & application functionality, as well as the storage of the data.
+								</p>
+								<a href="https://aeneville2.github.io/GEOG777ExploringGTNP/#" class="btn btn-primary" target="_blank">See the application</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -302,12 +345,19 @@
 						<div class="card">
 							<div class="card-header"><h6>CUWCD Pipeline COF Scoring Application</h6></div>
 							<a href="assets/CUWCD Pipeline COF Scoring Application Screenshot Aspen Neville.png" target="_blank"><img class="card-img-top" src="assets/CUWCD Pipeline COF Scoring Application Screenshot Aspen Neville.png" alt="CUWCD Pipeline COF Scoring Application"></a>
-							<div class="card-body"><p>I designed this web application as part of the Practicum in GIS Development course at UW-Madison.
-								This project was a culminating final project of the program. I utilized primarily Esri's ArcGIS Maps SDK for JavaScript to
-								design the front-end of the application and calculate consequence of failure scores for pipelines based on spatial relationships
-								to nearby features. I also utilized D3 for charts. The scores were stored in a PostgreSQL database and a web-based controller API
-								written in C# was used for communication between the front-end and back-end of the application.
-							</p></div>
+							<div class="card-body">
+								<p><strong>Technology & Skills: </strong>ArcGIS Maps SDK for JavaScript, D3, jQuery UI, Bootstrap</p>
+								<p><strong>Course: </strong>GEOG 778 - Practicum in GIS Development (UW-Madison)</p>
+								<p><strong>Project Background: </strong>This interactive web application was my culminating final project for the Master's in 
+									GIS Development degree from UW-Madison. I designed it for the Central Utah Water Conservancy District (CUWCD)
+									to evaluate the consequence of failure (COF, aka the potential impacts that would occur should the pipeline fail) scores for their pipelines. 
+									COF is scored by evaluating the spatial relationships between a pipeline and surrounding features 
+									(e.g., distances to nearby roads). As such, this interactive web map application, is designed to calculate COF scores 
+									for CUWCD pipelines based on spatial relationships between a selected pipeline and nearby features, 
+									write those scores to the PostgreSQL database through the use of a controller-based web API written in C#, 
+									and view the scores in tables and charts for comparison to help determine pipeline replacement schedules. 
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-0" id="placeholder">
