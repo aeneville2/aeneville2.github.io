@@ -176,10 +176,13 @@
 									COF is scored by evaluating the spatial relationships between a pipeline and surrounding features 
 									(e.g., distances to nearby roads). As such, this interactive web map application, is designed to calculate COF scores 
 									for CUWCD pipelines using methods that evaluate the spatial relationships between a selected pipeline and nearby features, 
-									write those scores to the PostgreSQL database through the use of API calls to a controller-based web API written in C#, 
+									write those scores to the PostgreSQL database through the use of API calls (POST) to a controller-based web API written in C#
+									on the hosting server, 
 									and view the scores in tables and charts for comparison to help determine pipeline replacement schedules. 
-									Due to privacy constraints regarding the data, the application is located behind a firewall and is unable to be shared here.
 								</p>
+							</div>
+							<div class="card-footer text-center">
+								<p style="font-style:italic;">Due to privacy constraints regarding the data, the application is located behind a firewall and is unable to be shared here.</p>
 							</div>
 						</div>
 					</div>
@@ -188,7 +191,7 @@
 							<div class="card-header"><h6>Estimated Water Use in the United States by County</h6></div>
 							<a href="assets/Estimated Water Use Screenshot.png" target="_blank"><img class="card-img-top" src="assets/Estimated Water Use Screenshot.png" alt="Coordinated Visualization Map"></a>
 							<div class="card-body">
-								<p><strong>Tools: </strong>D3, JavaScript, GitHub</p>
+								<p><strong>Tools: </strong>D3, JavaScript, jQuery, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
 								<p><strong>Project Background: </strong>The goal of this project was to create an interactive web page with a choropleth map and chart
 									to generate meaningful insights regarding patterns in the data set. As such, the interactive operators of retrieve and reexpress 
@@ -208,17 +211,17 @@
 							<div class="card-header"><h6>Exploring Grand Teton National Park (GTNP)</h6></div>
 							<a href="assets/GEOG 777 Project 2 Main Screen v2.png" target="_blank"><img class="card-img-top" src="assets/GEOG 777 Project 2 Main Screen v2.png" alt="Exploring GTNP"></a>
 							<div class="card-body">
-								<p><strong>Tools: </strong>Mapbox, Bootstrap, D3, JavaScript</p>
+								<p><strong>Tools: </strong>Mapbox, Bootstrap, D3, JavaScript, GitHub</p>
 								<p><strong>Course: </strong>GEOG 777 - Capstone in GIS Development (UW-Madison)</p>
 								<p><strong>Project Background: </strong>
 								In the course, we were given a task to design a mobile-friendly application
-								for a park that was cohesive and centered around themes. I designed the application for first-time visitors to Grand Teton National Park
+								for a park. I designed the application for first-time visitors to Grand Teton National Park
 								and focused on the themes of exploring, learning, safety, and enjoyment. In the application, the user can select different points of 
 								interest in the map to find out more information, search for and get directions to places, see their current location,
 								 and filter the points displayed in the map. 
 								The application also allows users to contribute to one of the data layers by ranking their favorite point of interest using a form
-								which then uses API calls for inserting the new data (PUT) and retrieving the updated data (GET) from the data layers stored in MapBox.
-								The new point is then added to the map and updated in a chart also available. I had to consider aspects of design to make the application
+								which then uses API calls on form submission for inserting the new data (PUT) and retrieving the updated data (GET) from the data layers stored in Mapbox.
+								The new point is then added to the map and updated in a chart also available in the app. I had to consider aspects of design to make the application
 								work well on mobile devices. 
 								I primarily used Bootstrap to make the application cohesive & responsive and Mapbox for the map & application functionality.
 								</p>
@@ -243,14 +246,15 @@
 								in the state of Wisconsin. Building the application required that I utilize what I had learned regarding python from the Introduction
 								to Geocomputing (GEOG 378) course and spatial analysis from the GIS and Spatial Analysis (GEOG 579) course at UW-Madison. 
 								For the application, I leveraged the library of Arcpy for the spatial analysis and the library of Tkinter for the GUI. 
-								The spatial analysis methods of IDW, Zonal Statistics, Joining, and Generalized Linear Regression were used. In the 
+								The spatial analysis methods of IDW > Zonal Statistics > Add Join > Generalized Linear Regression were used. In the 
 								GUI, the user could input different values for the distance decay coefficient used in the IDW step of the analysis. Then, 
-								the analysis would be performed and a resulting standard deviation map, linear regression equation, and statistical test values would
+								the analysis would be performed and the end results from the Generalized Linear Regression (a resulting standard deviation map, linear regression equation, and statistical test values) would
 								be output to the GUI for the user to evaluate and save the results.
 								</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/GEOG 777 Project 1 Report.pdf" class="btn btn-primary" target="_blank">Read the Report</a>
+								<!--<a href="assets/GEOG 777 Project 1 Report.pdf" class="btn btn-primary" target="_blank">Read the Report</a>-->
+								<a href="https://youtu.be/xKPLfsCpEbg" class="btn btn-primary" target="_blank">View the Demo Video</a>
 							</div>
 						</div>
 					</div>
@@ -266,11 +270,14 @@
 								I designed it for managers and the marketing teams of the Grand Teton Lodge Company to understand if there were patterns 
 								between where a guest originates from and their preferences while staying in the park. The guests data was stored in a table 
 								in a PostgreSQL database. 
-								From the client, the user can choose to only display guests in the map with certain stay preferences (such as month of stay),
+								From the client, the user can query which guests to display in the map based on certain stay preferences (such as month of stay),
 								add new guests into the database, and update the data for existing guests in the database. 
-								Based on the user interactions, HTTP GET & POST requests communicate with a Java JSP that then connects to the database 
+								Based on the user interactions, HTTP GET & POST requests communicate with a Java JSP on the hosting server that then connects to the database 
 								and performs the necessary SQL query before returning the guests data for display in the map and pie charts.
 								</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="https://youtu.be/wDpkegOG0X4" class="btn btn-primary" target="_blank">View a Demo Video</a>
 							</div>
 						</div>
 					</div>
@@ -279,13 +286,17 @@
 							<div class="card-header"><h6>National Parks Annual Visitation</h6></div>
 							<a href="assets/Leaflet Lab.png" target="_blank"><img class="card-img-top" src="assets/Leaflet Lab.png" alt="National Park Visitation Map"></a>
 							<div class="card-body">
-								<p><strong>Tools: </strong>Leaflet, jQuery, JavaScript</p>
+								<p><strong>Tools: </strong>Leaflet, jQuery, JavaScript, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
 								<p><strong>Project Background: </strong>As my first project utilizing JavaScript, the goal was to design an interactive 
 								thematic map with interaction operators to explore the map. My project focused on comparing annual
 								visitation at national parks from 2011 to 2020 with proportional point symbols sized according to annual visitation at each park.
 								The application included the operators of zoom, pan, retrieve (popups for each point),
-								sequence (move through the years), and overlay (turning on an average visitation layer).</p></div>
+								sequence (move through the years), and overlay (turning on an average visitation layer).</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="https://aeneville2.github.io/leaflet_lab/" class="btn btn-primary" target="_blank">See the Application</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -295,7 +306,7 @@
 							<div class="card-header"><h6>National Parks Geodatabase</h6></div>
 							<a href="assets/National Parks ER Diagram with Symbols.png" target="_blank"><img class="card-img-top" src="assets/National Parks ER Diagram with Symbols.png" alt="National Parks ER Diagram"></a>
 							<div class="card-body">
-								<p><strong>Tools: </strong>Esri Geodatabase, ArcGIS Pro, ER & Relational Diagrams</p>
+								<p><strong>Tools: </strong>Esri Geodatabase, ArcGIS Pro</p>
 								<p><strong>Course: </strong>GEOG 574 - Geospatial Database Design and Development (UW-Madison)</p>
 								<p><strong>Project Background: </strong>The goal of this project was to design and implement a spatial database
 									that could be manipulated to help explore and solve a problem. It was my first time designing and implementing a database.
@@ -318,11 +329,16 @@
 							<div class="card-body">
 								<p><strong>Tools: </strong>ArcGIS Pro, Adobe Photoshop & Illustrator</p>
 								<p><strong>Course: </strong>GEOG 572 - Graphic Design in Cartography (UW-Madison)</p>
-								<p>This project focused on creating a network flow map for a hypothetical bike race with a realistic relief technique 
+								<p><strong>Project Background: </strong>This project focused on creating a network flow map for a hypothetical bike race with a realistic relief technique 
 									used for the terrain.
 									The overall goal was to apply the concept of visual hierarchy to have the reference map components fade
 									to the background with the bike route standing out as the figure. The project involved working with 
-									both vector and raster data formats. It was good practice for designing a map with cartographic principles in mind.</p></div>
+									both vector and raster data formats. It was good practice for designing a map with cartographic principles in mind.
+								</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="assets/Lab2FinalMap.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="soda-shops">
@@ -332,11 +348,11 @@
 							<div class="card-body">
 								<p><strong>Tools: </strong>Leaflet, D3, JavaScript, jQuery, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
-								<p><strong>Project Background: </strong>The goal of the project was to explore representation and interactive
-								techniques. I designed the Soda Shops in Utah interactive web application 
+								<p><strong>Project Background: </strong>As the final project of the course, the goal was to explore representation and interactive
+								techniques in greater depth. I designed the Soda Shops in Utah interactive web application 
 								to allow users to discover and learn more about the soda shop phenomenon in Utah. The map contains point 
-								symbols at each shop location, color-coded by shop with popups of more information (retrieve operator). Additionally, 
-								there are filters for the shops in the map based on menu items (filter operator), allowing users to compare what each soda shop sells. 
+								symbols color-coded by shop at each shop location with popups of more information about the shop. Additionally, 
+								there are filters for the shops in the map based on menu items, allowing users to compare what each soda shop sells. 
 								A pie chart displays the proportion of stores statewide showing which soda shop is most popular. 
 								Users can select different counties and the map and pie chart update accordingly for comparison on the county-level.</p>
 							</div>
@@ -359,18 +375,24 @@
 									map as we went throughout the course to get practice with the principles.
 									This was my first cartographic design product.</p>
 							</div>
+							<div class="card-footer text-center">
+								<a href="assets/Tanzania.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="infographic">
 						<div class="card">
 							<div class="card-header"><h6>The Story Behind Utah's Drought & the Water Supply</h6></div>
-							<a href="assets/Lab1Infographic_Revised.png" target="_blank"><img class="card-img-top" src="assets/Lab1Infographic_Revised.png" alt="Infographic" style="background-color:white;"></a>
+							<a href="assets/Lab1Infographic_Revised.jpg" target="_blank"><img class="card-img-top" src="assets/Lab1Infographic_Revised.jpg" alt="Infographic" style="background-color:white;"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Adobe Illustrator, ArcGIS Pro</p>
 								<p><strong>Course: </strong>GEOG 572 - Graphic Design in Cartography (UW-Madison)</p>
 								<p><strong>Project Background: </strong>The goal was to practice visual storytelling in the form of a longform information graphic.
-								Within the infographic, maps including a bivariate map (split-symbol map) and other statistical graphics were used to help tell the story.
+								Within the infographic, maps (including a bivariate split-symbol map) and other statistical graphics were used to help tell the story.
 								My focus was on presenting the story of Utah's drought and the resulting water supply.</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="assets/Lab1Infographic_Revised.jpg" class="btn btn-primary" target="_blank">View the Infographic</a>
 							</div>
 						</div>
 					</div>
@@ -389,7 +411,11 @@
 								packs on a monthly basis. Using existing python scripts and the knowledge I had learned of python, I was able to generate 
 								a script that completely automated the process and only required entering in a few parameters in the command line to run,
 								rather than the 1-2 days of manual effort it used to take to complete that process.
-							</p></div>
+								</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="assets/VTPK Update Script.jpg" class="btn btn-primary" target="_blank">View Code Screenshot</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="reservoir">
@@ -401,7 +427,11 @@
 								<p><strong>Project Background: </strong>I created the above split symbol map for a presentation 
 							comparing 2020 and 2021 reservoir peaks. Since I created the presentation for the board of directors, I needed to design it in a way
 							that presented the information powerfully yet simply. Using the split symbol technique achieved both of those goals as the split symbols
-							made it easy to compare the two years while still conveying the story of the lower reservoirs in 2021.</p></div>
+							made it easy to compare the two years while still conveying the story of the lower reservoirs in 2021.</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="assets/ReservoirPeaksSplitSymbolMap.png" class="btn btn-primary" target="_blank">View the Map</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="tolkien-district-map">
@@ -413,7 +443,11 @@
 								<p><strong>Project Background: </strong>At CUWCD, we recently updated the District maps. 
 							One of the more interesting ones I got to be involved with was applying a fun Tolkien-style theme to the basic map for 
 							display on canvas in the break room.
-							I had to apply various cartographic principles to ensure it matched the theme, while still conveying the intended information.</p></div>
+							I had to apply various cartographic principles to ensure it matched the theme, while still conveying the intended information.</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="assets/Lord_of_the_Rings_District_Map.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -427,7 +461,11 @@
 								<p><strong>Project Background: </strong>I created the above map for another department to be a 
 							basic reference map showing places of interest for Utah Lake. I often have the opportunity to work with other departments at 
 							Central Utah Water Conservancy District (CUWCD) to create a wide range of maps. 
-							Doing so has given me a great opportunity to coordinate with others to create maps that best fit their needs.</p></div>
+							Doing so has given me a great opportunity to coordinate with others to create maps that best fit their needs.</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="assets/UtahLakeMap.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="water supply">
@@ -441,6 +479,9 @@
 								I am grateful for the opportunity I have had to pioneer this effort and set the stage for future presentations. 
 								To see some of the StoryMap presentations,
 								visit <a href="https://www.cuwcd.com/waterdata.html#gsc.tab=0">this link</a> and view any of the Water Supply Updates.</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="https://watersupply.cuwcd.com" class="btn btn-primary" target="_blank">View the Current StoryMap</a>
 							</div>
 						</div>
 					</div>	
@@ -457,6 +498,9 @@
 								All of the data is stored in an SDE in the CUWCD ArcGIS Enterprise Server.
 								I am utilizing Bootstrap to ensure that the application works well for many screen sizes.
 							</p></div>
+							<div class="card-footer text-center">
+								<p style="font-style:italic;">Link to application will be here when it's released.</p>
+							</div>
 						</div>
 					</div>
 				</div>
