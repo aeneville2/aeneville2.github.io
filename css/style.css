@@ -54,19 +54,31 @@ button{
 	object-fit:fill;
 }
 
-h4 span {
+h4 > span {
 	background-color:rgba(175,199,205,0.7);
 	padding:10px;
+	font-size:16px;
 }
 
-h5 span{
+h5 > span{
 	background-color:rgba(209,241,227,0.7);
 	text-align: center;
 	padding:5px;
+	font-size:14px;
+	font-weight:bold;
 }
 
 h6 {
 	font-weight:bold;
+	font-size:12px;
+}
+
+p {
+	font-size:12px;
+}
+
+li {
+	font-size:12px;
 }
 
 footer{
@@ -137,9 +149,10 @@ footer p{
 	background-color:#d1f1e3;
 }
 
-.card-header {
+.card-header > h6 {
 	font-weight:bold;
 	text-align:center;
+	font-size:12px;
 }
 
 .card-img-top{
