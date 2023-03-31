@@ -5,7 +5,6 @@ body {
 header, nav {
 	background-color:#d1f1e3;
 	font-family:"Lucida Handwriting";
-	text-align:center;
 	padding:5px;
 	justify-content:center;
 }
@@ -28,12 +27,12 @@ header, nav {
 
 .carousel-item img {
 	/*max-height:500px;
-	max-width:800px;*/
-	max-height:90vh;
-	height:auto;
+	max-width:800px;
+	max-height:80vh;*/
+	height:90vh;
 	width:auto;
 	display:inline-block !important;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 #top-btn {
@@ -44,9 +43,9 @@ header, nav {
 	background-color:white;
 }
 
-button{
+/*button{
 	background-color:white;
-}
+}*/
 
 #top-btn img{
 	height:20px;
@@ -54,10 +53,11 @@ button{
 	object-fit:fill;
 }
 
-h4 > span {
+h4 > span, .carousel-caption > a {
 	background-color:rgba(175,199,205,0.7);
 	padding:10px;
 	font-size:16px;
+	font-weight:bold;
 }
 
 h5 > span{
@@ -156,7 +156,7 @@ footer p{
 }
 
 .card-img-top{
-	height:350px;
+	height:200px;
 	object-fit:scale-down;
 }
 
