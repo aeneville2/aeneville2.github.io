@@ -4,7 +4,7 @@ body {
 
 #wrapper{
 	font-family:"Lucida Bright",fantasy;
-	font-size: 12pt;
+	font-size: 2.75vmin;
 	color: #473904;
 	padding-left:5px;
 	padding-right:5px;
@@ -35,15 +35,15 @@ h5 > span{
 
 h6 {
 	font-weight:bold;
-	font-size:2.5vmin;
+	font-size:2.75vmin;
 }
 
 p {
-	font-size:2.5vmin;
+	font-size:2.75vmin;
 }
 
 li {
-	font-size:2.5vmin;
+	font-size:2.75vmin;
 }
 
 header, nav {
@@ -60,6 +60,15 @@ header, nav {
 
 .nav-link {
 	text-decoration: underline;
+}
+
+#about-me-menu,
+#navbarDropdown,
+#academic_work-menu,
+#professional_work-menu,
+#experience-menu,
+#contact-menu {
+	color:#473904;text-decoration:underline;font-size:2vmin;
 }
 
 .carousel-item {
@@ -85,7 +94,7 @@ header, nav {
 
 .carousel-caption > a {
 	font-weight:bold;
-	font-size:2.5vmin;
+	font-size:2.75vmin;
 }
 
 #section{
@@ -97,7 +106,7 @@ header, nav {
 }
 
 #mypic{
-	height:150px;
+	height:35vh;
 	object-fit:cover;
 	float:center;
 }
@@ -110,7 +119,7 @@ header, nav {
 .card-header > h6 {
 	font-weight:bold;
 	text-align:center;
-	font-size:14px;
+	font-size:3vmin;
 }
 
 .card-img-top{
@@ -120,15 +129,15 @@ header, nav {
 
 .card-body {
 	/*height:100vh;*/
-	font-size: 12px;
+	font-size: 2.75vmin;
 }
 
 .card-footer {
-	font-size:12px;
+	font-size:2.75vmin;
 }
 
 .card-footer > a {
-	font-size:12px;
+	font-size:2.75vmin;
 	background-color: rgba(175,199,205,1.0);
 	color:#473904;
 	border:solid 1px;
@@ -145,6 +154,13 @@ header, nav {
 #short_resume{
 	padding:10px;
 	background-color:rgba(255,255,255,0.7)
+}
+
+#education,
+#work,
+#skills {
+	font-size:3vmin;
+	font-weight:bold;
 }
 
 #contact_items p {
@@ -167,7 +183,7 @@ footer{
 
 footer p{
 	text-align:center;
-	font-size:8pt;
+	font-size:2.25vmin;
 	font-style:italic;
 	padding:0;
 	margin:0;
