@@ -10,9 +10,9 @@ body {
 	padding-right:5px;
 }
 
-.container-fluid {
+/*.container-fluid {
 	margin: 100px;
-}
+}*/
 
 #body-wrapper{
 	margin:0px;
@@ -21,7 +21,7 @@ body {
 h4 > span{
 	background-color:rgba(175,199,205,0.7);
 	padding:10px;
-	font-size:16px;
+	font-size:3.5vmin;
 	font-weight:bold;
 }
 
@@ -29,21 +29,21 @@ h5 > span{
 	background-color:rgba(209,241,227,0.7);
 	text-align: center;
 	padding:5px;
-	font-size:14px;
+	font-size:3vmin;
 	font-weight:bold;
 }
 
 h6 {
 	font-weight:bold;
-	font-size:12px;
+	font-size:2.5vmin;
 }
 
 p {
-	font-size:12px;
+	font-size:2.5vmin;
 }
 
 li {
-	font-size:12px;
+	font-size:2.5vmin;
 }
 
 header, nav {
@@ -85,6 +85,7 @@ header, nav {
 
 .carousel-caption > a {
 	font-weight:bold;
+	font-size:2.5vmin;
 }
 
 #section{
