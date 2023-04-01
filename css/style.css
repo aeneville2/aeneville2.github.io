@@ -53,14 +53,6 @@ header, nav {
 	/*justify-content:center;*/
 }
 
-#app-title {
-	font-size:2.5vmin;
-	color:#473904;
-	font-weight:bold;
-	margin-top:0;
-	padding:0px;
-}
-
 .navbar-toggler {
 	border:solid 1px;
 	border-color:#afc7cd;
