@@ -9,11 +9,11 @@
 
 	<!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
 </head>
-<body style="background-image:url(assets/Topo_Map.png);background-repeat:repeat;background-position:0 0;background-size:100% auto">
+<body style="background-image:url(assets/Topo_Map.png);background-repeat:repeat;background-position:0 0;background-size:100% auto;">
 	<div id="wrapper">
 		<nav class="navbar sticky-top navbar-expand-md bg-body-tertiary" style="height:10vh;">
-			<div class="container-fluid" style="margin:10px;">
-				<a class="navbar-brand text-wrap" href="#" style="font-size:2.5vmin;color:#473904;font-weight:bold;">GIS Development & Cartography | Aspen Neville</a>
+			<div class="container-fluid">
+				<a class="navbar-brand text-wrap" href="#" id="app-title">GIS Development & Cartography | Aspen Neville</a>
 			
 				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" style="font-size:3vmin;padding:0;margin:0;">
 					<span class="navbar-toggler-icon"></span>
@@ -37,24 +37,6 @@
 				</div>	
 			</div>
 		</nav>
-		<!--<header style="text-align:center;justify-content:center;">
-			<div id="title">
-				<h1 id="name">Aspen Neville</h1>
-				<h2 id="subtitle">GIS: Cartography & Development</h2>
-			</div>
-			<div class="container-fluid" id="nav_container">
-				<div class="row" style="padding:0;margin-left:24%;text-align:center;">
-					<nav class="navbar navbar-expand-md mx-auto" id="navigation">
-						<ul class="navbar-nav">
-							<li class="nav-item"><a class="nav-link" href="#highlighted_work">Highlighted Work</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about_me">About Me</a></li>
-							<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>-->
 		<div class="container-fluid" id="body-wrapper">
 			<div class="row">
 				<div class="col-12">
@@ -65,46 +47,16 @@
 							  <button type="button" data-bs-target="#carouselWork" data-bs-slide-to="2" aria-label="Slide 3"></button>
 						</div>-->
 						<div class="carousel-inner">
-							  <div class="carousel-item active">
+							<div class="carousel-item active">
 								<img src="assets/Tanzania.jpg" class="d-block w-100" alt="Tanzania Reference Map">
 								<div class="carousel-caption d-block">
 									<a href="#tanzania" style="color:#473904;">Tanzania Reference Map</a>
 								</div>
-							  </div>
-							<div class="carousel-item">
-								<img src="assets/Lab2FinalMap.jpg" class="d-block w-100" alt="Realistic Relief Bike Route Map">
-								<div class="carousel-caption d-block">
-									<a href="#bike_route" style="color:#473904;">National Parks of the West Bike Race Map</a>
-								</div>
-							</div>
-							  <div class="carousel-item">
-								<img src="assets/UtahLakeMap.jpg" class="d-block w-100" alt="Utah Lake Map">
-								<div class="carousel-caption d-block">
-									<a href="#utah_lake" style="color:#473904;">Utah Lake Map</a>
-								</div>
-							  </div>
-							<div class="carousel-item">
-								<img src="assets/Soda_Shops.png" class="d-block w-100" alt="Soda Shops Interactive Web Map">
-								<div class="carousel-caption d-block">
-									<a href="#soda_shops" style="color:#473904;">Soda Shops in Utah application</a>
-								</div>
 							</div>
 							<div class="carousel-item">
-								<img src="assets/GrandTetonLodgeCo_Application.png" class="d-block w-100" alt="Grand Teton Lodge Co. Interactive App">
+								<img src="assets/CUWCD Pipeline COF Scoring Application Screenshot Aspen Neville.png" class="d-block w-100" alt="CUWCD Pipeline COF Scoring Application">
 								<div class="carousel-caption d-block">
-									<a href="#grand-teton-lodge-co-app" style="color:#473904;">Grand Teton Lodge Company Guests application</a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/National Parks ER Diagram with Symbols.png" class="d-block w-100" alt="National Parks Database ER Diagram">
-								<div class="carousel-caption d-block">
-									<a href="#database" style="color:#473904;">National Parks Geodatabase</a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/Leaflet Lab.png" class="d-block w-100" alt="Leaflet Interactive Time Map">
-								<div class="carousel-caption d-block">
-									<a href="#leaflet-lab" style="color:#473904;">National Parks Annual Visitation application</a>
+									<a href="#pipeline-cof" style="color:#473904;">CUWCD Pipeline COF Scoring Application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
@@ -114,15 +66,75 @@
 								</div>
 							</div>
 							<div class="carousel-item">
+								<img src="assets/GEOG 777 Project 2 Main Screen v2.png" class="d-block w-100" alt="Exploring Grand Teton National Park App">
+								<div class="carousel-caption d-block">
+									<a href="#gtnp-mobile-friendly-app" style="color:#473904;">Exploring Grand Teton National Park (GTNP) mobile web application</a>
+								</div>
+							</div>
+							<div class="carousel-item">
 								<img src="assets/GEOG 777 Project 1 Results Application Screen.png" class="d-block w-100" alt="Wisconsin Census Rate and Nitrate Tkinter">
 								<div class="carousel-caption d-block">
 									<a href="#python-spatial-analysis" style="color:#473904;">Exploring the Spatial Relationship Between Cancer and Nitrate application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img src="assets/GEOG 777 Project 2 Main Screen v2.png" class="d-block w-100" alt="Exploring Grand Teton National Park App">
+								<img src="assets/GrandTetonLodgeCo_Application.png" class="d-block w-100" alt="Grand Teton Lodge Co. Interactive App">
 								<div class="carousel-caption d-block">
-									<a href="#gtnp-mobile-friendly-app" style="color:#473904;">Exploring Grand Teton National Park (GTNP) mobile web application</a>
+									<a href="#grand-teton-lodge-co-app" style="color:#473904;">Grand Teton Lodge Company Guests application</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Leaflet Lab.png" class="d-block w-100" alt="Leaflet Interactive Time Map">
+								<div class="carousel-caption d-block">
+									<a href="#leaflet-lab" style="color:#473904;">National Parks Annual Visitation application</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Lab2FinalMap.jpg" class="d-block w-100" alt="Realistic Relief Bike Route Map">
+								<div class="carousel-caption d-block">
+									<a href="#bike_route" style="color:#473904;">National Parks of the West Bike Race Map</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/National Parks ER Diagram with Symbols.png" class="d-block w-100" alt="National Parks Database ER Diagram">
+								<div class="carousel-caption d-block">
+									<a href="#database" style="color:#473904;">National Parks Geodatabase</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Soda_Shops.png" class="d-block w-100" alt="Soda Shops Interactive Web Map">
+								<div class="carousel-caption d-block">
+									<a href="#soda_shops" style="color:#473904;">Soda Shops in Utah application</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Lab1Infographic_Revised.png" class="d-block w-100" alt="Infographic" style="background-color:white;">
+								<div class="carousel-caption d-block">
+									<a href="#infographic" style="color:#473904;">The Story Behind Utah's Drought & the Water Supply infographic</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/VTPK Update Script.jpg" class="d-block w-100" alt="Vector Tile Pack Update Script">
+								<div class="carousel-caption d-block">
+									<a href="#vtpk-python-script" style="color:#473904;">Automating Vector Tile Pack Updates</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/ReservoirPeaksSplitSymbolMap.png" class="d-block w-100" alt="Reservoir Peak Split Symbol Map">
+								<div class="carousel-caption d-block">
+									<a href="#reservoir" style="color:#473904;">Reservoir Peaks Split Symbol Map</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Lord_of_the_Rings_District_Map.jpg" class="d-block w-100" alt="Lord of the Rings CUWCD Map">
+								<div class="carousel-caption d-block">
+									<a href="#tolkien-district-map" style="color:#473904;">Tolkien-Themed District Map</a>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/UtahLakeMap.jpg" class="d-block w-100" alt="Utah Lake Map">
+								<div class="carousel-caption d-block">
+									<a href="#utah_lake" style="color:#473904;">Utah Lake Map</a>
 								</div>
 							</div>
 							<div class="carousel-item">
@@ -134,33 +146,9 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img src="assets/ReservoirPeaksSplitSymbolMap.png" class="d-block w-100" alt="Reservoir Peak Split Symbol Map">
+								<img src="assets/WCWEP Fields Screenshot with Field Selected 29 Mar 2023.png" class="d-block w-100" alt="WCWEP Fields application">
 								<div class="carousel-caption d-block">
-									<a href="#reservoir" style="color:#473904;">Reservoir Peaks Split Symbol Map</a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/Lab1Infographic_Revised.png" class="d-block w-100" alt="Infographic" style="background-color:white;">
-								<div class="carousel-caption d-block">
-									<a href="#infographic" style="color:#473904;">The Story Behind Utah's Drought & the Water Supply infographic</a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/Lord_of_the_Rings_District_Map.jpg" class="d-block w-100" alt="Lord of the Rings CUWCD Map">
-								<div class="carousel-caption d-block">
-									<a href="#tolkien-district-map" style="color:#473904;">Tolkien-Themed District Map</a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/VTPK Update Script.jpg" class="d-block w-100" alt="Vector Tile Pack Update Script">
-								<div class="carousel-caption d-block">
-									<a href="#vtpk-python-script" style="color:#473904;">Automating Vector Tile Pack Updates</a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/CUWCD Pipeline COF Scoring Application Screenshot Aspen Neville.png" class="d-block w-100" alt="CUWCD Pipeline COF Scoring Application">
-								<div class="carousel-caption d-block">
-									<a href="#pipeline-cof" style="color:#473904;">CUWCD Pipeline COF Scoring Application</a>
+									<a href="#wcwep-fields" style="color:#473904;">WCWEP Fields application</a>
 								</div>
 							</div>
 						</div>
@@ -238,7 +226,7 @@
 					<div class="col-md-4 col-xs-10" id="d3-lab">
 						<div class="card">
 							<div class="card-header"><h6>Estimated Water Use in the United States by County</h6></div>
-							<a href="assets/Estimated Water Use Screenshot.png" target="_blank"><img class="card-img-top" src="assets/Estimated Water Use Screenshot.png" alt="Coordinated Visualization Map"></a>
+							<a href="assets/Estimated Water Use Screenshot.png" target="_blank"><img class="card-img-top" src="assets/Estimated Water Use Screenshot.png" alt="Estimated Water Use in the United States by County"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>D3, JavaScript, jQuery, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
@@ -258,7 +246,7 @@
 					<div class="col-md-4 col-xs-10" id="gtnp-mobile-friendly-app">
 						<div class="card">
 							<div class="card-header"><h6>Exploring Grand Teton National Park (GTNP)</h6></div>
-							<a href="assets/GEOG 777 Project 2 Main Screen v2.png" target="_blank"><img class="card-img-top" src="assets/GEOG 777 Project 2 Main Screen v2.png" alt="Exploring GTNP"></a>
+							<a href="assets/GEOG 777 Project 2 Main Screen v2.png" target="_blank"><img class="card-img-top" src="assets/GEOG 777 Project 2 Main Screen v2.png" alt="Exploring Grand Teton National Park"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Mapbox, Bootstrap, D3, JavaScript, GitHub</p>
 								<p><strong>Course: </strong>GEOG 777 - Capstone in GIS Development (UW-Madison)</p>
@@ -285,7 +273,7 @@
 					<div class="col-md-4 col-xs-10" id="python-spatial-analysis">
 						<div class="card">
 							<div class="card-header"><h6>Exploring the Spatial Relationship Between Cancer and Nitrate</h6></div>
-							<a href="assets/GEOG 777 Project 1 Results Application Screen.png" target="_blank"><img class="card-img-top" src="assets/GEOG 777 Project 1 Results Application Screen.png" alt="Spatial Analysis Application"></a>
+							<a href="assets/GEOG 777 Project 1 Results Application Screen.png" target="_blank"><img class="card-img-top" src="assets/GEOG 777 Project 1 Results Application Screen.png" alt="Exploring the Spatial Relationship between Cancer and Nitrate"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Python, Arcpy, Tkinter</p>
 								<p><strong>Course: </strong>GEOG 777 - Capstone in GIS Development (UW-Madison)</p>
@@ -310,7 +298,7 @@
 					<div class="col-md-4 col-xs-10" id="grand-teton-lodge-co-app">
 						<div class="card">
 							<div class="card-header"><h6>Grand Teton Lodge Company Guests</h6></div>
-							<a href="assets/GrandTetonLodgeCo_Application.png" target="_blank"><img class="card-img-top" src="assets/GrandTetonLodgeCo_Application.png" alt="Grand Teton Lodge Company Web Application"></a>
+							<a href="assets/GrandTetonLodgeCo_Application.png" target="_blank"><img class="card-img-top" src="assets/GrandTetonLodgeCo_Application.png" alt="Grand Teton Lodge Company Guests"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Google Maps Platform, D3, JavaScript, Java, PostgreSQL Database</p>
 								<p><strong>Course: </strong>GEOG 576 - Geospatial Web and Mobile Programming (UW-Madison)</p>
@@ -333,7 +321,7 @@
 					<div class="col-md-4 col-xs-10" id="leaflet-lab">
 						<div class="card">
 							<div class="card-header"><h6>National Parks Annual Visitation</h6></div>
-							<a href="assets/Leaflet Lab.png" target="_blank"><img class="card-img-top" src="assets/Leaflet Lab.png" alt="National Park Visitation Map"></a>
+							<a href="assets/Leaflet Lab.png" target="_blank"><img class="card-img-top" src="assets/Leaflet Lab.png" alt="National Park Annual Visitation"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Leaflet, jQuery, JavaScript, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
@@ -353,7 +341,7 @@
 					<div class="col-md-4 col-xs-10" id="database">
 						<div class="card">
 							<div class="card-header"><h6>National Parks Geodatabase</h6></div>
-							<a href="assets/National Parks ER Diagram with Symbols.png" target="_blank"><img class="card-img-top" src="assets/National Parks ER Diagram with Symbols.png" alt="National Parks ER Diagram"></a>
+							<a href="assets/National Parks ER Diagram with Symbols.png" target="_blank"><img class="card-img-top" src="assets/National Parks ER Diagram with Symbols.png" alt="National Parks Geodatabase"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Esri Geodatabase, ArcGIS Pro</p>
 								<p><strong>Course: </strong>GEOG 574 - Geospatial Database Design and Development (UW-Madison)</p>
@@ -374,7 +362,7 @@
 					<div class="col-md-4 col-xs-10" id="bike_route">
 						<div class="card">
 							<div class="card-header"><h6>National Parks of the West Bike Race</h6></div>
-							<a href="assets/Lab2FinalMap.jpg" target="_blank"><img class="card-img-top" src="assets/Lab2FinalMap.jpg" alt="Bike Route Map"></a>
+							<a href="assets/Lab2FinalMap.jpg" target="_blank"><img class="card-img-top" src="assets/Lab2FinalMap.jpg" alt="National Parks of the West Bike Race"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>ArcGIS Pro, Adobe Photoshop & Illustrator</p>
 								<p><strong>Course: </strong>GEOG 572 - Graphic Design in Cartography (UW-Madison)</p>
@@ -393,7 +381,7 @@
 					<div class="col-md-4 col-xs-10" id="soda_shops">
 						<div class="card">
 							<div class="card-header"><h6>Soda Shops in Utah</h6></div>
-							<a href="assets/Soda_Shops.png" target="_blank"><img class="card-img-top" src="assets/Soda_Shops.png" alt="Soda Shops Application"></a>
+							<a href="assets/Soda_Shops.png" target="_blank"><img class="card-img-top" src="assets/Soda_Shops.png" alt="Soda Shops in Utah"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Leaflet, D3, JavaScript, jQuery, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
@@ -432,7 +420,7 @@
 					<div class="col-md-4 col-xs-10" id="infographic">
 						<div class="card">
 							<div class="card-header"><h6>The Story Behind Utah's Drought & the Water Supply</h6></div>
-							<a href="assets/Lab1Infographic_Revised.jpg" target="_blank"><img class="card-img-top" src="assets/Lab1Infographic_Revised.jpg" alt="Infographic" style="background-color:white;"></a>
+							<a href="assets/Lab1Infographic_Revised.jpg" target="_blank"><img class="card-img-top" src="assets/Lab1Infographic_Revised.jpg" alt="The Story Behind Utah's Drought & the Water Supply" style="background-color:white;"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Adobe Illustrator, ArcGIS Pro</p>
 								<p><strong>Course: </strong>GEOG 572 - Graphic Design in Cartography (UW-Madison)</p>
@@ -449,11 +437,11 @@
 					</div>
 				</div>
 				<div class="row justify-content-center" id="professional_work">
-					<div class="col-12" style="text-align:center"><h5><span>Professional Work</span></h5></div>
+					<div class="col-12" style="margin-top:20px;text-align:center"><h5><span>Professional Work</span></h5></div>
 					<div class="col-md-4 col-xs-10" id="vtpk-python-script">
 						<div class="card">
 							<div class="card-header"><h6>Automating Vector Tile Pack Updates</h6></div>
-							<a href="assets/VTPK Update Script.jpg"><img class="card-img-top" src="assets/VTPK Update Script.jpg" alt="VTPK Update Python Script"></a>
+							<a href="assets/VTPK Update Script.jpg"><img class="card-img-top" src="assets/VTPK Update Script.jpg" alt="Automating Vector Tile Pack Updates"></a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Python, Arcpy, ArcGIS API for Python</p>
 								<p><strong>Project Background: </strong>One of the most tedious workflows we had at Central Utah Water Conservancy District 
@@ -537,7 +525,7 @@
 							</div>
 						</div>
 					</div>	
-					<div class="col-md-4 col-xs-10">
+					<div class="col-md-4 col-xs-10" id="wcwep-fields">
 						<div class="card">
 							<div class="card-header"><h6>WCWEP Fields</h6></div>
 							<a href="assets/WCWEP Fields Screenshot with Field Selected 29 Mar 2023.png"><img class="card-img-top" src="assets/WCWEP Fields Screenshot with Field Selected 29 Mar 2023.png" alt="WCWEP Fields App"></a>

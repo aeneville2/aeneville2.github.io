@@ -2,58 +2,23 @@ body {
 	background-color:#afc7cd;
 }
 
-header, nav {
-	background-color:#d1f1e3;
-	font-family:"Lucida Handwriting";
-	padding:5px;
-	justify-content:center;
+#wrapper{
+	font-family:"Lucida Bright",fantasy;
+	font-size: 12pt;
+	color: #473904;
+	padding-left:5px;
+	padding-right:5px;
 }
 
-.navbar-toggler {
-	border:solid 1px;
-	border-color:#afc7cd;
+.container-fluid {
+	margin: 100px;
 }
 
-.nav-link {
-	text-decoration: underline;
+#body-wrapper{
+	margin:0px;
 }
 
-.carousel-item {
-	text-align:center;
-	justify-content:center;
-	position:relative;
-	height:100%;
-}
-
-.carousel-item img {
-	/*max-height:500px;
-	max-width:800px;
-	max-height:80vh;*/
-	height:90vh;
-	width:auto;
-	display:inline-block !important;
-	object-fit: cover;
-}
-
-#top-btn {
-	float:right;
-	position:sticky;
-	top:0;
-	z-index:100;
-	background-color:white;
-}
-
-/*button{
-	background-color:white;
-}*/
-
-#top-btn img{
-	height:20px;
-	width:15px;
-	object-fit:fill;
-}
-
-h4 > span, .carousel-caption > a {
+h4 > span{
 	background-color:rgba(175,199,205,0.7);
 	padding:10px;
 	font-size:16px;
@@ -81,57 +46,54 @@ li {
 	font-size:12px;
 }
 
-footer{
-	margin:0;
-}
-
-footer p{
-	text-align:center;
-	font-size:8pt;
-	font-style:italic;
-	padding:0;
-	margin:0;
-	background-color:#d1f1e3
-}
-
-#wrapper{
-	font-family:"Lucida Bright",fantasy;
-	font-size: 12pt;
-	color: #473904;
-	padding-left:5px;
-	padding-right:5px;
-}
-
-.container-fluid {
-	margin: 100px;
-}
-
-#body-wrapper{
-	margin:0px;
-}
-
-.row {
-	margin:50px;
-}
-
-/*#title{
+header, nav {
+	background-color:#d1f1e3;
+	font-family:"Lucida Handwriting";
 	padding:5px;
-	border-bottom:1pt solid #473904;
+	/*justify-content:center;*/
 }
 
-#navigation{
-	padding-top:0px;
-}
-
-#nav_container{
+#app-title {
+	font-size:2.5vmin;
+	color:#473904;
+	font-weight:bold;
+	margin-top:0;
 	padding:0px;
-	margin:0px;
 }
 
-.nav-item{
-	padding-right:20px;
-	padding-left:20px;
-}*/
+.navbar-toggler {
+	border:solid 1px;
+	border-color:#afc7cd;
+}
+
+.nav-link {
+	text-decoration: underline;
+}
+
+.carousel-item {
+	text-align:center;
+	justify-content:center;
+	position:relative;
+	height:100%;
+}
+
+.carousel-item img {
+	/*max-height:500px;
+	max-width:800px;
+	max-height:80vh;*/
+	height:90vh;
+	width:80%;
+	display:inline-block !important;
+	object-fit: cover;
+}
+
+.carousel-caption {
+	background-color:rgba(175,199,205,0.8);
+}
+
+.carousel-caption > a {
+	font-weight:bold;
+}
 
 #section{
 	font-family:"Lucida Handwriting";
@@ -141,18 +103,21 @@ footer p{
 	font-weight:bold;
 }
 
-#highlighted_work .col-xs-10{
-	margin-top:25px;
+#mypic{
+	height:150px;
+	object-fit:cover;
+	float:center;
 }
 
 .card {
 	background-color:#d1f1e3;
+	margin-top:10px;
 }
 
 .card-header > h6 {
 	font-weight:bold;
 	text-align:center;
-	font-size:12px;
+	font-size:14px;
 }
 
 .card-img-top{
@@ -171,11 +136,17 @@ footer p{
 
 .card-footer > a {
 	font-size:12px;
+	background-color: rgba(175,199,205,1.0);
+	color:#473904;
+	border:solid 1px;
+	border-color:rgba(175,199,205,1.0);
+	border-radius:5px;
 }
 
-#mypic{
-	height:200px;
-	object-fit:cover;
+.card-footer > a:hover {
+	background-color: rgba(175,199,205,0.5);
+	color:black;
+	border-color:rgba(175,199,205,1.0);
 }
 
 #short_resume{
@@ -197,3 +168,15 @@ footer p{
 	background-color:rgba(175,199,205,0.7);
 }
 
+footer{
+	margin:0;
+}
+
+footer p{
+	text-align:center;
+	font-size:8pt;
+	font-style:italic;
+	padding:0;
+	margin:0;
+	background-color:#d1f1e3
+}
