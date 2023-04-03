@@ -53,9 +53,29 @@ header, nav {
 	/*justify-content:center;*/
 }
 
+nav {
+	height:10vh;
+}
+
+#app-title {
+	font-size:2.5vmin;
+	color:#473904;
+	font-weight:bold;
+	margin-top:0;
+	width:auto;
+	padding:0px;
+}
+
 .navbar-toggler {
 	border:solid 1px;
 	border-color:#afc7cd;
+}
+
+#nav-list {
+	font-size:2vmin;
+	background-color:#d1f1e3;
+	width:fit-content;
+	text-align:center;
 }
 
 .nav-link {
@@ -69,6 +89,11 @@ header, nav {
 #experience-menu,
 #contact-menu {
 	color:#473904;text-decoration:underline;font-size:2vmin;
+}
+
+#carouselWork {
+	height:90vh;
+	justify-content:center;
 }
 
 .carousel-item {
@@ -109,6 +134,12 @@ header, nav {
 	height:35vh;
 	object-fit:cover;
 	float:center;
+}
+
+#bio,
+#focus_statement {
+	background-color:rgba(255,255,255,0.7);
+	padding:10px;
 }
 
 .card {
@@ -170,11 +201,14 @@ header, nav {
 
 #quotes {
 	font-family:"Lucida Handwriting";
-	text-align:center
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 #quotes h5{
 	background-color:rgba(175,199,205,0.7);
+	font-size:3vmin;
 }
 
 footer{
