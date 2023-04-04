@@ -22,11 +22,11 @@
 					<ul class="navbar-nav ms-auto mb-2 mb-md-0" id="nav-list">
 						<!--<li class="nav-item"><a class="nav-link" href="#">Home</a></li>-->
 						<li class="nav-item"><a class="nav-link" href="#about_me" id="about-me-menu">About Me</a></li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown" id="highlighted_work_dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Highlighted Work
 							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-align:center;width:fit-content;">
+							<ul class="dropdown-menu" id="work-menu" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="#academic_work" id="academic_work-menu">Academic Work</a></li>
 								<li><a class="dropdown-item" href="#professional_work" id="professional_work-menu">Professional Work</a></li>
 							</ul>
@@ -62,31 +62,31 @@
 							<div class="carousel-item">
 								<img src="assets/D3 Lab with Coordinated Visualization.png" class="d-block w-100" alt="D3 Coordinated Visualization Map">
 								<div class="carousel-caption d-block">
-									<a href="#d3-lab" style="color:#473904;">Estimated Water Use in the United States by County application</a>
+									<a href="#d3-lab" style="color:#473904;">Estimated Water Use in the United States by County Application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
 								<img src="assets/GEOG 777 Project 2 Main Screen v2.png" class="d-block w-100" alt="Exploring Grand Teton National Park App">
 								<div class="carousel-caption d-block">
-									<a href="#gtnp-mobile-friendly-app" style="color:#473904;">Exploring Grand Teton National Park (GTNP) mobile web application</a>
+									<a href="#gtnp-mobile-friendly-app" style="color:#473904;">Exploring Grand Teton National Park (GTNP) mobile web Application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
 								<img src="assets/GEOG 777 Project 1 Results Application Screen.png" class="d-block w-100" alt="Wisconsin Census Rate and Nitrate Tkinter">
 								<div class="carousel-caption d-block">
-									<a href="#python-spatial-analysis" style="color:#473904;">Exploring the Spatial Relationship Between Cancer and Nitrate application</a>
+									<a href="#python-spatial-analysis" style="color:#473904;">Exploring the Spatial Relationship Between Cancer and Nitrate Application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
 								<img src="assets/GrandTetonLodgeCo_Application.png" class="d-block w-100" alt="Grand Teton Lodge Co. Interactive App">
 								<div class="carousel-caption d-block">
-									<a href="#grand-teton-lodge-co-app" style="color:#473904;">Grand Teton Lodge Company Guests application</a>
+									<a href="#grand-teton-lodge-co-app" style="color:#473904;">Grand Teton Lodge Company Guests Application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
 								<img src="assets/Leaflet Lab.png" class="d-block w-100" alt="Leaflet Interactive Time Map">
 								<div class="carousel-caption d-block">
-									<a href="#leaflet-lab" style="color:#473904;">National Parks Annual Visitation application</a>
+									<a href="#leaflet-lab" style="color:#473904;">National Parks Annual Visitation Application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
@@ -104,19 +104,19 @@
 							<div class="carousel-item">
 								<img src="assets/Soda_Shops.png" class="d-block w-100" alt="Soda Shops Interactive Web Map">
 								<div class="carousel-caption d-block">
-									<a href="#soda_shops" style="color:#473904;">Soda Shops in Utah application</a>
+									<a href="#soda_shops" style="color:#473904;">Soda Shops in Utah Application</a>
 								</div>
 							</div>
 							<div class="carousel-item">
 								<img src="assets/Lab1Infographic_Revised.png" class="d-block w-100" alt="Infographic" style="background-color:white;">
 								<div class="carousel-caption d-block">
-									<a href="#infographic" style="color:#473904;">The Story Behind Utah's Drought & the Water Supply infographic</a>
+									<a href="#infographic" style="color:#473904;">The Story Behind Utah's Drought & the Water Supply Infographic</a>
 								</div>
 							</div>
 							<div class="carousel-item">
 								<img src="assets/VTPK Update Script.jpg" class="d-block w-100" alt="Vector Tile Pack Update Script">
 								<div class="carousel-caption d-block">
-									<a href="#vtpk-python-script" style="color:#473904;">Automating Vector Tile Pack Updates</a>
+									<a href="#vtpk-python-script" style="color:#473904;">Automating Vector Tile Pack Updates Script</a>
 								</div>
 							</div>
 							<div class="carousel-item">
@@ -177,7 +177,7 @@
 						<div id="bio">
 							<p>Born and raised in the mountains of Colorado, I came to appreciate the beauty found in the mountains that surrounded me
 							and developed a sense of adventure and curiosity from a young age. That curiosity grew as I traveled to many places with my parents. These experiences instilled in me
-							me a fresh perspective of what surrounded me and a desire to learn about the new places, peoples, cultures, and landscapes I encountered. While deciding on a major
+							a fresh perspective of what surrounded me and a desire to learn about the new places, peoples, cultures, and landscapes I encountered. While deciding on a major
 							for my undergraduate degree, I attended a study abroad to Tanzania with the Geography Department. That experience enriched my perspective and increased my desire
 							to learn even more. Upon returning home, I declared Geography as a major and have never looked back since. I had a goal to find something 
 							that I enjoyed doing to pursue for a career. With GIS, I achieved that goal. I love what I do from getting to create and design
@@ -228,7 +228,7 @@
 					</div>
 					<div class="col-md-4 col-xs-10" id="d3-lab">
 						<div class="card">
-							<div class="card-header"><h6>Estimated Water Use in the United States by County</h6></div>
+							<div class="card-header"><h6>Estimated Water Use in the United States by County Application</h6></div>
 							<a href="assets/Estimated Water Use Screenshot.png" target="_blank">
 								<img class="card-img-top" src="assets/Estimated Water Use Screenshot.png" alt="Estimated Water Use in the United States by County">
 							</a>
@@ -238,7 +238,7 @@
 								<p><strong>Project Background: </strong>The goal of this project was to create an interactive web page with a choropleth map and chart
 									to generate meaningful insights regarding patterns in the data set.  My project focused on looking at different types of water use 
 									in the United States by counties. To help generate insights, the interactive operators of reexpress and retrieve with 
-									coordinated visualization in the form of highlighting were used: 
+									coordinated visualization were used: 
 									the type of water use variable being displayed in the map and chart can be changed by the user and 
 									selecting a point in the scatterplot or county in the map highlights the associated point/county in the other with information
 									for that county allowing
@@ -252,7 +252,7 @@
 					</div>
 					<div class="col-md-4 col-xs-10" id="gtnp-mobile-friendly-app">
 						<div class="card">
-							<div class="card-header"><h6>Exploring Grand Teton National Park (GTNP)</h6></div>
+							<div class="card-header"><h6>Exploring Grand Teton National Park (GTNP) Application</h6></div>
 							<a href="assets/GEOG 777 Project 2 Main Screen v2.png" target="_blank">
 								<img class="card-img-top" src="assets/GEOG 777 Project 2 Main Screen v2.png" alt="Exploring Grand Teton National Park">
 							</a>
@@ -260,8 +260,8 @@
 								<p><strong>Tools: </strong>Mapbox, Bootstrap, D3, JavaScript, GitHub</p>
 								<p><strong>Course: </strong>GEOG 777 - Capstone in GIS Development (UW-Madison)</p>
 								<p><strong>Project Background: </strong>
-								In the course, we were given a task to design a mobile-friendly application
-								for a park. I designed the application for first-time visitors to Grand Teton National Park. 
+								In the course, we were given a challenge to design a mobile-friendly application
+								for a park with a user-contributed layer. I designed the web application for first-time visitors to Grand Teton National Park. 
 								In the application, the user can select different points of 
 								interest in the map to find out more information, search for and get directions to places, see their current location,
 								 and filter the points displayed in the map. 
@@ -280,7 +280,7 @@
 				<div class="row justify-content-center" id="academic_work-2">
 					<div class="col-md-4 col-xs-10" id="python-spatial-analysis">
 						<div class="card">
-							<div class="card-header"><h6>Exploring the Spatial Relationship Between Cancer and Nitrate</h6></div>
+							<div class="card-header"><h6>Exploring the Spatial Relationship Between Cancer and Nitrate Application</h6></div>
 							<a href="assets/GEOG 777 Project 1 Results Application Screen.png" target="_blank">
 								<img class="card-img-top" src="assets/GEOG 777 Project 1 Results Application Screen.png" alt="Exploring the Spatial Relationship between Cancer and Nitrate">
 							</a>
@@ -288,15 +288,15 @@
 								<p><strong>Tools: </strong>Python, Arcpy, Tkinter</p>
 								<p><strong>Course: </strong>GEOG 777 - Capstone in GIS Development (UW-Madison)</p>
 								<p><strong>Project Background: </strong>
-									In the course, we were given a task to design an application
+									In the course, we were given a challenge to design an application
 								that would perform spatial analysis methods based on user input to examine the relationship between cancer rates and nitrate levels
 								in the state of Wisconsin. Building the application required that I utilize what I had learned regarding python from the Introduction
 								to Geocomputing (GEOG 378) course and spatial analysis from the GIS and Spatial Analysis (GEOG 579) course at UW-Madison. 
 								For the application, I leveraged the library of Arcpy for the spatial analysis and the library of Tkinter for the GUI. 
 								The spatial analysis methods of IDW > Zonal Statistics > Add Join > Generalized Linear Regression were used. In the 
 								GUI, the user could input different values for the distance decay coefficient used in the IDW step of the analysis. Then, 
-								the analysis would be performed and the end results from the Generalized Linear Regression (a resulting standard deviation map, linear regression equation, and statistical test values) would
-								be output to the GUI for the user to evaluate and save the results.
+								the analysis would be performed and the end results from the Generalized Linear Regression analysis (a resulting standard deviation map, 
+								linear regression equation, and statistical test values) would be output to the GUI for the user to evaluate and save the results.
 								</p>
 							</div>
 							<div class="card-footer text-center">
@@ -307,7 +307,7 @@
 					</div>
 					<div class="col-md-4 col-xs-10" id="grand-teton-lodge-co-app">
 						<div class="card">
-							<div class="card-header"><h6>Grand Teton Lodge Company Guests</h6></div>
+							<div class="card-header"><h6>Grand Teton Lodge Company Guests Application</h6></div>
 							<a href="assets/GrandTetonLodgeCo_Application.png" target="_blank">
 								<img class="card-img-top" src="assets/GrandTetonLodgeCo_Application.png" alt="Grand Teton Lodge Company Guests">
 							</a>
@@ -322,28 +322,29 @@
 								From the client, the user can query which guests from the database to display in the map based on certain stay preferences (such as month of stay),
 								add new guests into the database, and update the data for existing guests in the database. 
 								Based on the user interactions, HTTP GET & POST requests communicate with a Java JSP on the hosting server that then connects to the database 
-								and performs the necessary SQL query before returning the guests data for display in the map and pie charts.
+								and performs the necessary SQL query before returning the guests data for display in the map and pie charts on the client.
 								</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="https://youtu.be/wDpkegOG0X4" class="btn btn-primary" target="_blank">View a Demo Video</a>
+								<a href="https://youtu.be/wDpkegOG0X4" class="btn btn-primary" target="_blank">View the Demo Video</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="leaflet-lab">
 						<div class="card">
-							<div class="card-header"><h6>National Parks Annual Visitation</h6></div>
+							<div class="card-header"><h6>National Parks Annual Visitation Application</h6></div>
 							<a href="assets/Leaflet Lab.png" target="_blank">
 								<img class="card-img-top" src="assets/Leaflet Lab.png" alt="National Park Annual Visitation">
 							</a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>Leaflet, jQuery, JavaScript, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
-								<p><strong>Project Background: </strong>As my first project utilizing JavaScript, the goal was to design a
-								thematic map with interaction operators to explore the map. My project focused on comparing annual
+								<p><strong>Project Background: </strong>As my first project utilizing JavaScript, the goal was to design a web application with a
+								thematic map and interaction operators to explore the map. My project focused on comparing annual
 								visitation at national parks from 2011 to 2020 with proportional point symbols sized according to annual visitation at each park.
 								The application included the operators of zoom, pan, retrieve (popups for each point),
-								sequence (move through the years), and overlay (turning on an average visitation layer).</p>
+								sequence (move through the years), and overlay (turning on an average visitation layer).
+								The project was a great introduction to using JavaScript to develop an interactive map with basic functionality and operators.</p>
 							</div>
 							<div class="card-footer text-center">
 								<a href="https://aeneville2.github.io/leaflet_lab/" class="btn btn-primary" target="_blank">Explore the Application</a>
@@ -362,12 +363,13 @@
 								<p><strong>Tools: </strong>Esri Geodatabase, ArcGIS Pro</p>
 								<p><strong>Course: </strong>GEOG 574 - Geospatial Database Design and Development (UW-Madison)</p>
 								<p><strong>Project Background: </strong>The goal of this project was to design and implement a spatial database
-									that could be manipulated to help explore and solve a problem. It was my first time designing and implementing a database.
-									My group chose to design a geodatabase in ArcGIS Pro to compare which national parks received the most visitation 
+									that could be manipulated to help explore and solve a problem.
+									My group chose to design a geodatabase in ArcGIS Pro to compare which national parks receive the most visitation 
 									and whether the nearby transportation networks or nearby population areas have any correlation with visitation. 
 									We used ER and Relational Diagrams to define the relationships and attributes between the different 
 									entities in the geodatabase during the design process and upon implementing the geodatabase, we manipulated it
 									using various geoprocessing tools in ArcGIS Pro to begin to explore the problem listed above.
+									It was my first time designing and implementing a database.
 								</p>
 							</div>
 							<div class="card-footer text-center">
@@ -377,28 +379,29 @@
 					</div>
 					<div class="col-md-4 col-xs-10" id="bike_route">
 						<div class="card">
-							<div class="card-header"><h6>National Parks of the West Bike Race</h6></div>
+							<div class="card-header"><h6>National Parks of the West Bike Race Map</h6></div>
 							<a href="assets/Lab2FinalMap.jpg" target="_blank">
 								<img class="card-img-top" src="assets/Lab2FinalMap.jpg" alt="National Parks of the West Bike Race">
 							</a>
 							<div class="card-body">
 								<p><strong>Tools: </strong>ArcGIS Pro, Adobe Photoshop & Illustrator</p>
 								<p><strong>Course: </strong>GEOG 572 - Graphic Design in Cartography (UW-Madison)</p>
-								<p><strong>Project Background: </strong>This project focused on creating a network flow map for a hypothetical bike race with a realistic relief technique 
-									used for the terrain.
+								<p><strong>Project Background: </strong>This project focused on creating a network flow map for a hypothetical bike race 
+									with a realistic relief technique used for the terrain.
 									The overall goal was to apply the concept of visual hierarchy to have the reference map components fade
 									to the background with the bike route standing out as the figure. The project involved working with 
-									both vector and raster data formats. It was good practice for designing a map with cartographic principles in mind.
+									both vector and raster data formats. It was good practice for designing a map with cartographic principles in mind 
+									and was my first project utilizing Adobe Photoshop as part of the design process.
 								</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/Lab2FinalMap.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+								<a href="assets/Lab2FinalMap.jpg" class="btn btn-primary" target="_blank">See the Map</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="soda_shops">
 						<div class="card">
-							<div class="card-header"><h6>Soda Shops in Utah</h6></div>
+							<div class="card-header"><h6>Soda Shops in Utah Application</h6></div>
 							<a href="assets/Soda_Shops.png" target="_blank">
 								<img class="card-img-top" src="assets/Soda_Shops.png" alt="Soda Shops in Utah">
 							</a>
@@ -406,10 +409,10 @@
 								<p><strong>Tools: </strong>Leaflet, D3, JavaScript, jQuery, GitHub</p>
 								<p><strong>Course: </strong>GEOG 575 - Interactive Cartography & Geovisualization (UW-Madison)</p>
 								<p><strong>Project Background: </strong>As the final project of the course, the goal was to explore representation and interactive
-								techniques in greater depth. I designed the Soda Shops in Utah interactive web application 
+								techniques in greater depth for a topic of our choice. I designed the Soda Shops in Utah interactive web application 
 								to allow users to discover and learn more about the soda shop phenomenon in Utah through the use of popups of information for the shops in the map, 
 								filtering the map based on menu items, and a pie chart showing the proportion of shops.
-								Additionally, the user can view everything on the county-level.</p>
+								The exploration can be performed on both statewide and county levels.</p>
 							</div>
 							<div class="card-footer text-center">
 								<a href="https://aeneville2.github.io/Soda_Shop" class="btn btn-primary" target="_blank">Explore the Application</a>
@@ -433,13 +436,13 @@
 									This was my first cartographic design product.</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/Tanzania.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+								<a href="assets/Tanzania.jpg" class="btn btn-primary" target="_blank">See the Map</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-10" id="infographic">
 						<div class="card">
-							<div class="card-header"><h6>The Story Behind Utah's Drought & the Water Supply</h6></div>
+							<div class="card-header"><h6>The Story Behind Utah's Drought & the Water Supply Infographic</h6></div>
 							<a href="assets/Lab1Infographic_Revised.jpg" target="_blank">
 								<img class="card-img-top" src="assets/Lab1Infographic_Revised.jpg" alt="The Story Behind Utah's Drought & the Water Supply" style="background-color:white;">
 							</a>
@@ -452,7 +455,7 @@
 								This was my first project using Adobe Illustrator in the design process.</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/Lab1Infographic_Revised.jpg" class="btn btn-primary" target="_blank">View the Infographic</a>
+								<a href="assets/Lab1Infographic_Revised.jpg" class="btn btn-primary" target="_blank">See the Infographic</a>
 							</div>
 						</div>
 					</div>
@@ -466,7 +469,7 @@
 					</div>
 					<div class="col-md-4 col-xs-10" id="vtpk-python-script">
 						<div class="card">
-							<div class="card-header"><h6>Automating Vector Tile Pack Updates</h6></div>
+							<div class="card-header"><h6>Automating Vector Tile Pack Updates Script</h6></div>
 							<a href="assets/VTPK Update Script.jpg" target="_blank">
 								<img class="card-img-top" src="assets/VTPK Update Script.jpg" alt="Automating Vector Tile Pack Updates">
 							</a>
@@ -482,7 +485,7 @@
 								</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/VTPK Update Script.jpg" class="btn btn-primary" target="_blank">View Code Screenshot</a>
+								<a href="assets/VTPK Update Script.jpg" class="btn btn-primary" target="_blank">See the Code Screenshot</a>
 							</div>
 						</div>
 					</div>
@@ -500,7 +503,7 @@
 							made it easy to compare the two years and convey the story of the lower reservoirs in 2021.</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/ReservoirPeaksSplitSymbolMap.png" class="btn btn-primary" target="_blank">View the Map</a>
+								<a href="assets/ReservoirPeaksSplitSymbolMap.png" class="btn btn-primary" target="_blank">See the Map</a>
 							</div>
 						</div>
 					</div>
@@ -518,7 +521,7 @@
 							I had to apply various cartographic principles to ensure it matched the theme, while still conveying the intended information.</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/Lord_of_the_Rings_District_Map.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+								<a href="assets/Lord_of_the_Rings_District_Map.jpg" class="btn btn-primary" target="_blank">See the Map</a>
 							</div>
 						</div>
 					</div>
@@ -538,7 +541,7 @@
 							Doing so has given me a great opportunity to coordinate with others to create maps that best fit their needs.</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="assets/UtahLakeMap.jpg" class="btn btn-primary" target="_blank">View the Map</a>
+								<a href="assets/UtahLakeMap.jpg" class="btn btn-primary" target="_blank">See the Map</a>
 							</div>
 						</div>
 					</div>
@@ -557,13 +560,13 @@
 								visit <a href="https://www.cuwcd.com/waterdata.html#gsc.tab=0">this link</a> and view any of the Water Supply Updates.</p>
 							</div>
 							<div class="card-footer text-center">
-								<a href="https://watersupply.cuwcd.com" class="btn btn-primary" target="_blank">View the Current StoryMap</a>
+								<a href="https://watersupply.cuwcd.com" class="btn btn-primary" target="_blank">View the Current Story Map</a>
 							</div>
 						</div>
 					</div>	
 					<div class="col-md-4 col-xs-10" id="wcwep-fields">
 						<div class="card">
-							<div class="card-header"><h6>WCWEP Fields</h6></div>
+							<div class="card-header"><h6>WCWEP Fields Application</h6></div>
 							<a href="assets/WCWEP Fields Screenshot with Field Selected 29 Mar 2023.png" target="_blank">
 								<img class="card-img-top" src="assets/WCWEP Fields Screenshot with Field Selected 29 Mar 2023.png" alt="WCWEP Fields App">
 							</a>

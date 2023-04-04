@@ -74,8 +74,16 @@ nav {
 #nav-list {
 	font-size:2vmin;
 	background-color:#d1f1e3;
-	width:fit-content;
+	max-width:fit-content;
 	text-align:center;
+	min-width:1rem;
+}
+
+#work-menu {
+	max-width:fit-content;
+	background-color:#d1f1e3;
+	text-align:center;
+	min-width:1rem;
 }
 
 .nav-link {
@@ -88,7 +96,9 @@ nav {
 #professional_work-menu,
 #experience-menu,
 #contact-menu {
-	color:#473904;text-decoration:underline;font-size:2vmin;
+	color:#473904;
+	text-decoration:underline;
+	font-size:2vmin;
 }
 
 #carouselWork {
@@ -139,7 +149,7 @@ nav {
 #bio,
 #focus_statement {
 	background-color:rgba(255,255,255,0.7);
-	padding:10px;
+	padding:5px;
 }
 
 .card {
