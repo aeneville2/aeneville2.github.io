@@ -86,6 +86,13 @@ nav {
 	min-width:1rem;
 }
 
+#academic_work-menu:focus,
+#academic_work-menu:hover,
+#professional_work-menu:focus,
+#professional_work-menu:hover {
+	background-color:#afc7cd;
+}
+
 .nav-link {
 	text-decoration: underline;
 }
@@ -187,6 +194,12 @@ nav {
 }
 
 .card-footer > a:hover {
+	background-color: rgba(175,199,205,0.5);
+	color:black;
+	border-color:rgba(175,199,205,1.0);
+}
+
+.card-footer > a:focus {
 	background-color: rgba(175,199,205,0.5);
 	color:black;
 	border-color:rgba(175,199,205,1.0);
