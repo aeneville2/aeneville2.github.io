@@ -82,7 +82,7 @@ nav {
 #nav-list {
 	font-size:2vmin;
 	background-color:#d1f1e3;
-	max-width:fit-content;
+	/*max-width:fit-content;*/
 	padding:5px;
 	text-align:center;
 	min-width:1rem;
