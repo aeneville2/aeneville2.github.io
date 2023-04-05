@@ -43,7 +43,8 @@ li {
 }
 
 header, nav {
-	background-color:#d1f1e3;
+	/*background-color:#d1f1e3;*/
+	background-color:rgba(209,241,227,0.7);
 	font-family:"Lucida Handwriting";
 	padding:5px;
 	/*justify-content:center;*/
@@ -81,17 +82,18 @@ nav {
 
 #nav-list {
 	font-size:2vmin;
-	background-color:#d1f1e3;
-	/*max-width:fit-content;*/
+	/*background-color:#d1f1e3;
+	max-width:fit-content;*/
+	background-color:rgba(209,241,227,0.7);
 	padding:5px;
 	text-align:center;
 	min-width:1rem;
 }
 
 #work-menu {
-	max-width:fit-content;
-	/*background-color:#d1f1e3;*/
-	background-color:white;
+	/*max-width:fit-content;
+	background-color:#d1f1e3;*/
+	background-color:rgba(255,255,255,0.7);
 	text-align:center;
 	min-width:1rem;
 }
@@ -176,8 +178,9 @@ nav {
 
 #bio,
 #focus_statement {
-	background-color:rgba(255,255,255,0.7);
-	padding:5px;
+	/*background-color:rgba(255,255,255,0.7);*/
+	background-color:white;
+	padding:10px;
 }
 
 .card {
@@ -227,7 +230,8 @@ nav {
 
 #short_resume{
 	padding:10px;
-	background-color:rgba(255,255,255,0.7)
+	/*background-color:rgba(255,255,255,0.7);*/
+	background-color:white;
 }
 
 #education,
@@ -264,5 +268,6 @@ footer p{
 	font-style:italic;
 	padding:0;
 	margin:0;
-	background-color:#d1f1e3
+	/*background-color:#d1f1e3;*/
+	background-color:rgba(209,241,227,0.7);
 }
