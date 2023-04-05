@@ -4,7 +4,7 @@ body {
 
 #wrapper{
 	/*font-family:"Lucida Bright",fantasy;*/
-	font-size: 2.75vmin;
+	font-size: 3vmin;
 	color: #473904;
 	padding-left:5px;
 	padding-right:5px;
@@ -25,21 +25,21 @@ h5 > span{
 	background-color:rgba(209,241,227,0.7);
 	text-align: center;
 	padding:5px;
-	font-size:3vmin;
+	font-size:3.25vmin;
 	font-weight:bold;
 }
 
 h6 {
 	font-weight:bold;
-	font-size:2.75vmin;
+	font-size:3vmin;
 }
 
 p {
-	font-size:2.75vmin;
+	font-size:3vmin;
 }
 
 li {
-	font-size:2.75vmin;
+	font-size:3vmin;
 }
 
 header, nav {
@@ -55,7 +55,7 @@ nav {
 }
 
 #app-title {
-	font-size:2.5vmin;
+	font-size:3vmin;
 	color:#473904;
 	font-weight:bold;
 	margin-top:0;
@@ -81,7 +81,7 @@ nav {
 }
 
 #nav-list {
-	font-size:2vmin;
+	font-size:2.5vmin;
 	/*background-color:#d1f1e3;
 	max-width:fit-content;*/
 	background-color:rgba(209,241,227,0.7);
@@ -121,7 +121,7 @@ nav {
 #contact-menu {
 	color:#473904;
 	text-decoration:underline;
-	font-size:2vmin;
+	font-size:2.5vmin;
 }
 
 #about-me-menu:hover,
@@ -134,7 +134,7 @@ nav {
 }
 
 #carouselWork {
-	height:90vh;
+	height:80vh;
 	justify-content:center;
 }
 
@@ -146,7 +146,7 @@ nav {
 }
 
 .carousel-item img {
-	height:90vh;
+	height:80vh;
 	width:80%;
 	display:inline-block !important;
 	object-fit: cover;
@@ -159,19 +159,19 @@ nav {
 
 .carousel-caption > a {
 	font-weight:bold;
-	font-size:2.75vmin;
+	font-size:3vmin;
 }
 
 #section{
 	font-family:"Lucida Handwriting";
-	margin-top:25px;
+	/*margin-top:25px;*/
 	margin-bottom:25px;
 	margin-left:0px;
 	font-weight:bold;
 }
 
 #mypic{
-	height:35vh;
+	height:25vh;
 	object-fit:cover;
 	float:center;
 }
@@ -185,13 +185,13 @@ nav {
 
 .card {
 	background-color:#d1f1e3;
-	margin-top:20px;
+	margin-top:40px;
 }
 
 .card-header > h6 {
 	font-weight:bold;
 	text-align:center;
-	font-size:3vmin;
+	font-size:3.25vmin;
 }
 
 .card-img-top{
@@ -200,16 +200,16 @@ nav {
 }
 
 .card-body {
-	font-size: 2.75vmin;
+	font-size: 3vmin;
 }
 
 .card-footer {
-	font-size:2.75vmin;
+	font-size:3vmin;
 }
 
 .card-footer > a,
 .card-footer > a:focus {
-	font-size:2.75vmin;
+	font-size:3vmin;
 	background-color: rgba(175,199,205,1.0);
 	color:#473904;
 	border:solid 1px;
@@ -249,8 +249,8 @@ nav {
 #quotes {
 	font-family:"Lucida Handwriting";
 	text-align:center;
-	margin-top:20px;
-	margin-bottom:20px;
+	margin-top:60px;
+	margin-bottom:60px;
 }
 
 #quotes h5{
