@@ -106,7 +106,7 @@ nav {
 #academic_work-menu:hover,
 #professional_work-menu:focus,
 #professional_work-menu:hover {
-	background-color:#afc7cd;
+	color:#afc7cd;
 }
 
 .nav-link {
@@ -130,7 +130,7 @@ nav {
 #professional_work-menu:hover,
 #experience-menu:hover,
 #contact-menu:hover {
-	color:black;
+	color:#afc7cd;
 }
 
 #carouselWork {
@@ -152,7 +152,7 @@ nav {
 	object-fit: cover;
 }
 
-.carousel-caption {
+/*.carousel-caption {
 	background-color:rgba(175,199,205,0.8);
 	padding:5px;
 }
@@ -162,16 +162,32 @@ nav {
 	font-size:3vmin;
 }
 
+.carousel-caption > a:hover {
+	color:#afc7cd;
+}*/
+
+.carousel-a {
+	font-weight:bold;
+	font-size:3vmin;
+	background-color:rgba(175,199,205,0.8);
+	padding:20px;
+}
+
+.carousel-a:hover,
+.carousel-a:focus {
+	color:black !important;
+}
+
 #section{
 	font-family:"Lucida Handwriting";
-	/*margin-top:25px;
-	margin-bottom:25px;*/
+	margin-top:60px;
+	margin-bottom:25px;
 	margin-left:0px;
 	font-weight:bold;
 }
 
 #mypic{
-	height:25vh;
+	width:100%;
 	object-fit:cover;
 	float:center;
 }
