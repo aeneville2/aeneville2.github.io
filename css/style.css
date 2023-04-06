@@ -130,12 +130,15 @@ nav {
 #professional_work-menu:hover,
 #experience-menu:hover,
 #contact-menu:hover {
-	color:#afc7cd;
+	/*color:#afc7cd;*/
+	color:black;
+	font-weight:bold;
 }
 
 #carouselWork {
 	height:80vh;
 	justify-content:center;
+	margin-top:5vh;
 }
 
 .carousel-item {
