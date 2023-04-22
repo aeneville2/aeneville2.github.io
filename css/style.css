@@ -104,8 +104,10 @@ nav {
 
 #academic_work-menu:focus,
 #academic_work-menu:hover,
+#academic_work-menu:active,
 #professional_work-menu:focus,
-#professional_work-menu:hover {
+#professional_work-menu:hover,
+#professional_work-menu:active {
 	color:#afc7cd;
 }
 
