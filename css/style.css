@@ -136,7 +136,7 @@ nav {
 }
 
 #carouselWork {
-	height:50vh;
+	height:80vh;
 	justify-content:center;
 	margin-top:5vh;
 }
@@ -149,7 +149,7 @@ nav {
 }
 
 .carousel-item img {
-	height:50vh;
+	height:80vh;
 	width:50%;
 	display:inline-block !important;
 	object-fit: cover;
