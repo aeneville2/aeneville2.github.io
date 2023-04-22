@@ -136,7 +136,7 @@ nav {
 }
 
 #carouselWork {
-	height:80vh;
+	height:50vh;
 	justify-content:center;
 	margin-top:5vh;
 }
@@ -149,8 +149,8 @@ nav {
 }
 
 .carousel-item img {
-	height:80vh;
-	width:80%;
+	height:50vh;
+	width:50%;
 	display:inline-block !important;
 	object-fit: cover;
 }
@@ -181,6 +181,29 @@ nav {
 .carousel-a:focus {
 	color:black !important;
 }
+
+#prev, #next {
+	background-color:rgba(0,0,0,0.5);
+}
+
+#prev:hover, #prev:focus, #next:hover, #next:focus {
+	background-color:rgba(0,0,0,0.6);
+}
+
+#prev-icon, #next-icon {
+	background-color:black;
+}
+
+/*.carousel-control-prev-icon {
+	border:2px solid black;
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>") !important;
+}
+
+.carousel-control-next-icon {
+	border:2px solid black;
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>") !important;
+
+}*/
 
 #section{
 	font-family:"Lucida Handwriting";
